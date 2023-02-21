@@ -1,10 +1,7 @@
 {
-  "name": "ut6-proyecto-arte-2d-alejandro-garcia",
+  "name": "proyecto",
   "source": "src/index.html",
-  "version": "1.0.0",
-  "description": "Portfolio videojuego 2d",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
     "build": "parcel build",
     "clean": "rimraf dist .cache .cache-loader",
@@ -19,20 +16,5 @@
     "node-sass": "^8.0.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Alexgf22/UT6-proyecto-arte-2d-alejandro-garcia.git"
-  },
-  "keywords": [
-    "robot",
-    "videojuego",
-    "2d"
-  ],
-  "author": "Alejandro Garcia Fernandez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Alexgf22/UT6-proyecto-arte-2d-alejandro-garcia/issues"
-  },
-  "homepage": "https://github.com/Alexgf22/UT6-proyecto-arte-2d-alejandro-garcia#readme"
+  }
 }
