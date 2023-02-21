@@ -1,5 +1,5 @@
 {
-  "name": "proyecto",
+  "name": "proyecto-portfolio-videojuego-2d",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",

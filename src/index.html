@@ -1,13 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto portfolio videojuego 2d</title>
-</head>
-<body>
-    <h1>Prueba empezando</h1>
+    <meta name="author" content="Alejandro Garcia Fernandez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="assets/sass/main.scss" rel="stylesheet">
+    <!--<script src="./assets/js/index.js"></script>-->
     
+</head>
+
+<body>
+
+    <header class="cabecera">
+    
+        <nav class="cabecera__menu-navegacion-nav">
+            <ul class="menu-navegacion-nav__lista-cabecera">
+                <div class="lista-cabecera__contenedor-logo-y-nombre">
+                    <img src="assets/imagen/Tile (6).png" class="contenedor-logo-y-nombre__logo-pagina">
+                    <p class="contenedor-logo-y-nombre__nombre-pagina">Energy Robots</p></div>
+
+                
+                <label for= "lista-cabecera__menu" class="lista-cabecera__nav-label">
+                    <img class="nav-label__icono-hamburguesa"  src="./assets/img/icono_hamburguesa.png">
+                </label>
+
+                <input type="checkbox" class="lista-cabecera__nav-input" id="lista-cabecera__menu">
+                
+                <div class="lista-cabecera__menu-hamburguesa">
+                    <li class="menu-hamburguesa__li"><a class="li__a" href="index.html">Inicio</a></li>
+                </div>
+                
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="main-pagina-inicio">
+        <section class="main-pagina-inicio__section">
+            <img class="section__imagen-robot" src="assets/img/escenario-personaje-segundo-formato.jpg" >
+            <!-- Hay un problema en el cual el enlace no funciona
+            en los últimos puntos de ruptura con el menú hamburguesa por el z-index y 
+            el position relative-->
+            <div class="section__contenedor-encima-img">
+                <a class="contenedor-encima-img__a" href="https://www.coinbase.com/assets"><span class="a__span">¡Mira tus activos!</span></a>
+            </div>
+            
+            
+        </section>
+       
+    </main>
+
+
+
+    <footer class="pie-pagina">
+
+        <div class="pie-pagina__contenedor-redes-sociales">
+ 
+            <img class="contenedor-redes-sociales__instagram-icono" src="assets/img/🦆 icon _brand instagram_.png" />
+            <a class= "contenedor-redes-sociales__instagram-enlace" href="https://www.instagram.com/coinbase/?hl=es">Instagram</a>
+        
+            <img class="contenedor-redes-sociales__facebook-icono" src="assets/img/🦆 icon _brand facebook_.png" />
+            <a class="contenedor-redes-sociales__facebook-enlace" href="https://www.facebook.com/Coinbase/">Facebook</a>
+           
+        </div>
+
+
+    
+    </footer>
+
+
+
+
 </body>
+
 </html>
