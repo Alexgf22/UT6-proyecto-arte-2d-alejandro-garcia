@@ -1,5 +1,7 @@
 .main-pagina-inicio {
 
+    height: 1400px;
+
     .main-pagina-inicio__section-video {
 
         .section-video__video-principal {
@@ -77,14 +79,60 @@
 
 
 
-    /*.main-pagina-inicio__section-personajes {
+    .main-pagina-inicio__section-personajes {
+        margin-top:200px;
 
+        .section-personajes__contenedor-personaje-robot {
+
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            align-items: center;
+
+            .contenedor-personaje-robot__parrafo {
+                width: 310px;
+            }
+
+            .contenedor-personaje-robot__imagen {
+                width: 700px;
+            }
+        }
+
+
+        // Mascota de Guille falta
+
+
+        .section-personajes__contenedor-boss-final{
+
+            margin-top: 50px;
+
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            align-items: center;
+
+            .contenedor-boss-final__imagen {
+                width: 500px;
+
+            }
+
+            .contenedor-boss-final__parrafo {
+                width: 310px;
+
+            }
+
+        }
 
     }
 
 
 
-    .main-pagina-inicio__section-audios {
+
+
+
+
+
+    /*.main-pagina-inicio__section-audios {
 
 
 
