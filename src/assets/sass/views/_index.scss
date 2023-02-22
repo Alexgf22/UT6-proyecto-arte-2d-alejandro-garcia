@@ -99,13 +99,32 @@
         }
 
 
-        // Mascota de Guille falta
+
+
+        .section-personajes__contenedor-personaje-mascota {
+
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            align-items: center;
+
+            .contenedor-personaje-mascota__imagen {
+                width: 500px;
+            }
+
+            .contenedor-personaje-mascota__parrafo {
+                width: 310px;
+            }
+
+
+
+        }
 
 
         .section-personajes__contenedor-boss-final{
 
             margin-top: 50px;
-
             display: flex;
             justify-content: center;
             gap: 60px;
