@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Staatliches&display=swap" rel="stylesheet">
     <title>Document</title>
     <link href="assets/sass/main.scss" rel="stylesheet">
-    <script src="./assets/js/carrousel.js"></script>
+    <!--<script src="./assets/js/carrousel.js"></script>-->
     
 </head>
 
@@ -58,25 +58,38 @@
         <!-- Carrousel escenarios-->
         
         <section class="main-pagina-inicio__section-escenarios">
-            <div class="section-escenarios__carrousel">
-                <div class="carrousel__grande">
-                    <img class="grande__imagen-escenario-alejandro" src="assets/img/escenario-personaje-segundo-formato.jpg" >
-                    <img class="grande__imagen-escenario-juanra" src="assets/img/escenario-juanra.jpeg" >
-                    <img class="grande__imagen-escenario-guille" src="assets/img/escenario-guille.jpeg" >
-                    <img class="grande__imagen-escenario-victor" src="assets/img/escenario-victor.jpeg" >
+
+            <div class="slideshow-container">
+            
+                <div class="mySlides fade">
+                  <img src="assets/img/escenario-personaje-segundo-formato.jpg">
                 </div>
-
-                <ul class="carrousel__puntos">
-                    <li class="puntos__punto activo"></li>
-                    <li class="puntos__punto activo"></li>
-                    <li class="puntos__punto activo"></li>
-                    <li class="puntos__punto activo"></li>
-
-                </ul>
-
-            </div>
+              
+                <div class="mySlides fade">
+                  <img src="assets/img/escenario-juanra.jpeg">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="assets/img/escenario-guille.jpeg">
+                </div>
+    
+              </div>
+              
+              <!-- The dots/circles -->
+              <div class="">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+            
             
         </section>
+
+        
+
+
+
 
 
         <section class="main-pagina-inicio__section-personajes">
