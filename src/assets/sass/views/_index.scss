@@ -14,20 +14,27 @@
 
     .main-pagina-inicio__section-escenarios {
 
-        .section-escenarios__imagen-escenario-alejandro {
-            @include estiloEscenario;
-        }
+        .section-escenarios__carrousel {
 
-        .section-escenarios__imagen-escenario-juanra {
-            @include estiloEscenario;
-        }
+            .carrousel__grande {
 
-        .section-escenarios__imagen-escenario-guille {
-            @include estiloEscenario;
-        }
+                .grande__imagen-escenario-alejandro {
+                    @include estiloEscenario;
+                }
 
-        .section-escenarios__imagen-escenario-victor {
-            @include estiloEscenario;
+                .grande__imagen-escenario-juanra {
+                    @include estiloEscenario;
+                }
+
+                .grande__imagen-escenario-guille {
+                    @include estiloEscenario;
+                }
+
+                .grande__imagen-escenario-victor {
+                    @include estiloEscenario;
+                }
+            }
+
         }
 
     }
