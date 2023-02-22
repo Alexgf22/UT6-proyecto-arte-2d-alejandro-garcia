@@ -327,6 +327,22 @@ body {
   width: 700px;
 }
 
+.main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota {
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__imagen {
+  width: 320px;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__parrafo {
+  width: 310px;
+}
+
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final {
   justify-content: center;
   align-items: center;
