@@ -3,7 +3,10 @@
     .main-pagina-inicio__section-video {
 
         .section-video__video-principal {
-            width:min-content;
+            width:600px;
+            margin: 0 auto;
+            display: block;
+            padding-top: 25px;
         }
 
     }

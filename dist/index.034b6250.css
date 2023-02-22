@@ -239,7 +239,10 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
-  width: min-content;
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 25px;
+  display: block;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario {
