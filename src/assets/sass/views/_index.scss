@@ -13,74 +13,57 @@
 
 
     .main-pagina-inicio__section-escenarios {
+        
+        .section-escenarios__contenedor-imagenes {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
 
-        .section-escenarios__carrousel {
-            width: 90%;
-            max-width: 120em;
-            padding: 2em;
-            // falta animación
-            overflow: hidden;
+            .contenedor-imagenes__escenario {
+                @include estiloEscenario;
+                display: none;
+            }
+        }
 
-            .carrousel__grande {
-                width: 400%;
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-between;
-                align-items: center;
-                // falta animación
-                padding: 2em;
 
-                transition: all .5s ease;
-                transform: translateX(0%);
+        .section-escenarios__puntos {
 
-                .grande__imagen-escenario-alejandro {
-                    @include estiloEscenario;
-                    // falta animación
-                }
-
-                .grande__imagen-escenario-juanra {
-                    @include estiloEscenario;
-                    // falta animación
-                }
-
-                .grande__imagen-escenario-guille {
-                    @include estiloEscenario;
-                    // falta animación
-                }
-
-                .grande__imagen-escenario-victor {
-                    @include estiloEscenario;
-                    // falta animación
-                }
+            .puntos__punto {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
             }
 
+            .puntos__punto:hover {
+                background-color: #717171;
+            }
 
-            .carrousel__puntos {
-                width: 100%;
-                margin: 1em 0 0;
-                padding: .4em;
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-
-                .puntos__punto {
-                    width: 2em;
-                    height: 2em;
-                    margin: 1em 1em 0;
-                    // falta animación
-                }
-
-                .activo {
-                    background-color: lightblue;
-
-                }
-
-
-
+            .active {
+                background-color: #717171;
             }
 
         }
+
+
+
+
+        .difuminado {
+            animation-name: difuminado;
+            animation-duration: 1.5s;
+          }
+          
+          @keyframes difuminado {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+        
+
+
 
     }
 
@@ -149,43 +132,8 @@
 
 
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
 
 
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-.active, .dot:hover {
-  background-color: #717171;
-}
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}

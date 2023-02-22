@@ -12,6 +12,7 @@
     <title>Document</title>
     <link href="assets/sass/main.scss" rel="stylesheet">
     <!--<script src="./assets/js/carrousel.js"></script>-->
+    <script src="./assets/js/carrusel2.js"></script>
     
 </head>
 
@@ -59,29 +60,23 @@
         
         <section class="main-pagina-inicio__section-escenarios">
 
-            <div class="slideshow-container">
+            <div class="section-escenarios__contenedor-imagenes">
             
-                <div class="mySlides fade">
-                  <img src="assets/img/escenario-personaje-segundo-formato.jpg">
-                </div>
+                <img class="contenedor-imagenes__escenario difuminado" src="assets/img/escenario-personaje-segundo-formato.jpg">
+                <img class="contenedor-imagenes__escenario difuminado" src="assets/img/escenario-juanra.jpeg">
+                <img class="contenedor-imagenes__escenario difuminado" src="assets/img/escenario-guille.jpeg">
+                <img class="contenedor-imagenes__escenario difuminado" src="assets/img/escenario-victor.jpeg">
+                
+            </div>
               
-                <div class="mySlides fade">
-                  <img src="assets/img/escenario-juanra.jpeg">
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="assets/img/escenario-guille.jpeg">
-                </div>
-    
-              </div>
-              
-              <!-- The dots/circles -->
-              <div class="">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-              </div>
+
+            <!-- Los puntos -->
+            <div class="section-escenarios__puntos">
+                <span class="puntos__punto" onclick="currentSlide(1)"></span>
+                <span class="puntos__punto" onclick="currentSlide(2)"></span>
+                <span class="puntos__punto" onclick="currentSlide(3)"></span>
+                <span class="puntos__punto" onclick="currentSlide(4)"></span>
+            </div>
             
             
         </section>
