@@ -238,8 +238,12 @@ body {
   }
 }
 
-.main-pagina-inicio .main-pagina-inicio__section .section__imagen-escenario {
-  width: 1400px;
+.main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
+  width: min-content;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario {
+  width: 600px;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

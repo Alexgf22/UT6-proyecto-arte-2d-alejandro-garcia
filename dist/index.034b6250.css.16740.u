@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.cabecera {
+  width: 100%;
+  background-color: #65737e;
+  padding: 10px;
+  position: sticky;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera {
+  width: 100%;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  display: flex;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa {
+  width: 79%;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li {
+  font-family: Staatliches;
+  list-style-type: none;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li #li__enlace-registro {
+  width: 50px;
+  color: #65737e;
+  background-color: #b23030;
+  border-radius: .5em;
+  padding: 6px;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li .li__a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__nav-label, .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__nav-input {
+  display: none;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .nav-label__icono-hamburguesa {
+  width: 30px;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__contenedor-logo-y-nombre {
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-family: Staatliches;
+  display: flex;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__contenedor-logo-y-nombre .contenedor-logo-y-nombre__logo-pagina {
+  width: 45px;
+}
+
+.cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__contenedor-logo-y-nombre .contenedor-logo-y-nombre__nombre-pagina {
+  color: #fff;
+  display: inline-block;
+}
+
+@media screen and (min-width: 378px) and (max-width: 640px) {
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__nav-label {
+    cursor: pointer;
+    display: block;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa {
+    width: 160px;
+    height: 330px;
+    float: right;
+    z-index: 2;
+    clip-path: circle(0);
+    background-color: #fff;
+    border-radius: .4em;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    transition: clip-path 1s ease-in-out;
+    display: flex;
+    position: absolute;
+    top: 14px;
+    right: 2px;
+    box-shadow: 0 14px 28px #00000040, 0 10px 10px #00000038;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li .li__a {
+    color: #000;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li #li__enlace-registro {
+    color: #000;
+    background-color: #b23030;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .nav-label__icono-hamburguesa {
+    cursor: pointer;
+    z-index: 3;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .lista-cabecera__nav-input:checked + .lista-cabecera__menu-hamburguesa {
+    clip-path: circle(100%);
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera {
+    position: relative;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__nav-label {
+    cursor: pointer;
+    display: block;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa {
+    width: 130px;
+    height: 290px;
+    z-index: 2;
+    clip-path: circle(0);
+    background-color: #fff;
+    border-radius: .4em;
+    flex-flow: column wrap;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    transition: clip-path 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 14px 28px #00000040, 0 10px 10px #00000038;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li .li__a {
+    color: #000;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li #li__enlace-registro {
+    color: #000;
+    background-color: #b23030;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .nav-label__icono-hamburguesa {
+    cursor: pointer;
+    z-index: 3;
+    background-color: #fff;
+    padding: 5px;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+
+  .cabecera .cabecera__menu-navegacion-nav .lista-cabecera__nav-input:checked + .lista-cabecera__menu-hamburguesa {
+    clip-path: circle(100%);
+  }
+}
+
+.pie-pagina {
+  width: 100%;
+  height: 55px;
+  background-color: #65737e;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  position: sticky;
+}
+
+.pie-pagina .pie-pagina__contenedor-redes-sociales {
+  justify-self: flex-start;
+}
+
+.pie-pagina .pie-pagina__contenedor-redes-sociales .contenedor-redes-sociales__instagram-icono {
+  width: 18px;
+  color: #fff;
+}
+
+.pie-pagina .pie-pagina__contenedor-redes-sociales .contenedor-redes-sociales__instagram-enlace {
+  color: #fff;
+  justify-self: flex-start;
+  font-family: Staatliches;
+  font-size: 12px;
+}
+
+.pie-pagina .pie-pagina__contenedor-redes-sociales .contenedor-redes-sociales__facebook-icono {
+  width: 18px;
+  color: #fff;
+}
+
+.pie-pagina .pie-pagina__contenedor-redes-sociales .contenedor-redes-sociales__facebook-enlace {
+  color: #fff;
+  justify-self: center;
+  font-family: Staatliches;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 378px) and (max-width: 520px) {
+  .pie-pagina {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .pie-pagina {
+    height: 80px;
+  }
+}
+
+.main-pagina-inicio .main-pagina-inicio__section .section__imagen-escenario {
+  width: 1400px;
+}
+
+/*# sourceMappingURL=index.034b6250.css.map */

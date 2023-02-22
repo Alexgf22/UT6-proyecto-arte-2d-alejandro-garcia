@@ -1,11 +1,34 @@
 .main-pagina-inicio {
 
+    .main-pagina-inicio__section-video {
 
-    .main-pagina-inicio__section {
-
-        .section__imagen-escenario {
-            width: 1400px;
+        .section-video__video-principal {
+            width:min-content;
         }
+
+    }
+
+
+    .main-pagina-inicio__section-escenarios {
+
+        .section-escenarios__imagen-escenario {
+            width: 600px;
+        }
+
+    }
+
+
+
+    .main-pagina-inicio__section-personajes {
+
+
+    }
+
+
+
+    .main-pagina-inicio__section-audios {
+
+
 
     }
 
