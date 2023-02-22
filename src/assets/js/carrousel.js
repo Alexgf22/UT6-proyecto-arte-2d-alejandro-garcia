@@ -20,7 +20,7 @@ punto.forEach( ( cadaPunto, i)=> {
         let operacion = posicion * -25
 
         // Movemos el grande
-        grande.style.transform = `translateX(${ operacion}%)`
+        grande.style.transform = `translateX(${ operacion }%)`
 
         // Recorremos todos los punto
         punto.forEach( ( cadaPunto, i)=> {

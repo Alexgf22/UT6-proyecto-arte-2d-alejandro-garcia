@@ -1,8 +1,8 @@
 @mixin estiloEscenario {
-    width: 700px;
+    width: 500px;
     display: block;
     margin: 0 auto;
     padding: 10px;
-    width: calc( 100% / 4);
+    width: calc( 100% / 4 - 4em);
     min-height: 10vh;
 }
