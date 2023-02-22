@@ -1,0 +1,95 @@
+.pie-pagina {
+    background-color: $color__primary;
+    position: sticky;
+    width: 100%;
+    height: 55px;
+    padding:10px;
+    display:flex;
+    /* La propiedad flex-direction row lo que hace
+    es indicar que los elementos se coloquen
+    uno detrás de otro en fila */
+    flex-flow: row wrap;
+    /* La propiedad justify-content space-between distribuye
+    los elementos de manera uniforme
+    El primer elemento está al ras con el inicio,
+    el último está al ras con el final   */
+    justify-content: space-between;
+    align-items:center;
+  
+  
+    .pie-pagina__contenedor-redes-sociales {
+      /* La propiedad justify-self lo que hace es mover un único
+      elemento sobre el eje horizontal. En este caso coloca
+      al principio del eje horizontal el elemento   */
+      justify-self: flex-start;
+  
+      .contenedor-redes-sociales__instagram-icono {
+        width: 18px;
+      }
+  
+      .contenedor-redes-sociales__instagram-enlace {
+        justify-self: flex-start;
+        color:  #ffffff;
+        font-family: $fuente-titulos;
+        font-size: 12px; 
+  
+      }
+    
+  
+      .contenedor-redes-sociales__facebook-icono {
+        width: 18px;
+      }
+  
+      .contenedor-redes-sociales__facebook-enlace {
+        /* La propiedad justify-self lo que hace es mover un único
+        elemento sobre el eje horizontal. En este caso coloca
+        el elemento en el centro del eje horizontal   */
+        justify-self: center;
+        color:  #ffffff;
+        font-family: $fuente-titulos;
+        font-size: 12px; 
+      }
+      
+  
+    }
+  
+    
+
+  
+
+  
+    
+  }
+  
+  
+  
+  // Responsive
+  
+  
+  
+  // Primer punto de ruptura
+  /*@media screen and (min-width: 400px) and (max-width: 600px) {
+    
+  }*/
+  
+  
+  
+  // Segundo punto de ruptura
+  @media screen and (min-width: 378px) and (max-width: 520px) {
+    .pie-pagina {
+      height: 60px;
+  
+    }
+  
+  }
+  
+  
+  
+  // Tercer punto de ruptura
+  @media screen and (max-width: 378px) {
+    .pie-pagina {
+      height: 80px;
+  
+    }
+  
+  }
