@@ -239,14 +239,17 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
-  width: 600px;
+  width: 800px;
   margin: 0 auto;
   padding-top: 25px;
   display: block;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario {
-  width: 600px;
+.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario-alejandro, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario-juanra, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario-guille, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario-victor {
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

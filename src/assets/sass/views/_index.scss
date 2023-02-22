@@ -3,7 +3,7 @@
     .main-pagina-inicio__section-video {
 
         .section-video__video-principal {
-            width:600px;
+            width:800px;
             margin: 0 auto;
             display: block;
             padding-top: 25px;
@@ -14,8 +14,20 @@
 
     .main-pagina-inicio__section-escenarios {
 
-        .section-escenarios__imagen-escenario {
-            width: 600px;
+        .section-escenarios__imagen-escenario-alejandro {
+            @include estiloEscenario;
+        }
+
+        .section-escenarios__imagen-escenario-juanra {
+            @include estiloEscenario;
+        }
+
+        .section-escenarios__imagen-escenario-guille {
+            @include estiloEscenario;
+        }
+
+        .section-escenarios__imagen-escenario-victor {
+            @include estiloEscenario;
         }
 
     }
