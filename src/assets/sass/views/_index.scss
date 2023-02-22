@@ -19,6 +19,7 @@
             max-width: 120em;
             padding: 2em;
             // falta animación
+            overflow: hidden;
 
             .carrousel__grande {
                 width: 200%;
@@ -71,7 +72,7 @@
                 }
 
                 .puntos__activo {
-                    background-color: orange;
+                    background-color: lightblue;
 
                 }
 
