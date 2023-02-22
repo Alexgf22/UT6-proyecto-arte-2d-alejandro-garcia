@@ -253,7 +253,7 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande {
-  width: 200%;
+  width: 400%;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
@@ -265,7 +265,7 @@ body {
 
 .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande .grande__imagen-escenario-alejandro, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande .grande__imagen-escenario-juanra, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande .grande__imagen-escenario-guille, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande .grande__imagen-escenario-victor {
   width: 700px;
-  width: calc(50% - 2em);
+  width: 25%;
   min-height: 10vh;
   margin: 0 auto;
   padding: 10px;

@@ -17,7 +17,7 @@ punto.forEach( ( cadaPunto, i)=> {
         // Guardar la posición de ese punto
         let posicion = i
         // Calculando el espacio que debe desplazarse el grande
-        let operacion = posicion * -50
+        let operacion = posicion * -25
 
         // Movemos el grande
         grande.style.transform = `translateX(${ operacion}%)`
