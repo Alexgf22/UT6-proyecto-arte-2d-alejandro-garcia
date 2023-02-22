@@ -63,6 +63,7 @@
   
           .contenedor-logo-y-nombre__logo-pagina {
             width: 45px;
+
           
           }
           
@@ -88,7 +89,7 @@
   
   
   // Segundo punto de ruptura
-  @media screen and (min-width: 378px) and (max-width: 520px) {
+  @media screen and (min-width: 378px) and (max-width: 640px) {
   .cabecera {
   
     .cabecera__menu-navegacion-nav {
@@ -111,7 +112,7 @@
           /* Con el column indicamos que cada elemento de la lista
           se pone uno debajo de otro */
           flex-flow: column wrap;
-          background-color: $color__secondary;
+          background-color: white;
           right: 2px;
           top: 14px;
           width: 160px;
@@ -151,7 +152,7 @@
           right: 5;
           padding: 5px;
           cursor: pointer;
-          background-color: $color__secondary;
+          background-color: white;
           position: absolute;
           /* Con el z-index hacemos que el icono de hamburguesa
           se posicione por encima del menú hamburguesa */
@@ -196,7 +197,7 @@
   
         .lista-cabecera__menu-hamburguesa {
           flex-flow: column wrap;
-          background-color: $color__secondary;
+          background-color: white;
           border-radius: 0.4em;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
           top: 0;
@@ -232,7 +233,7 @@
           right: 0;
           padding: 5px;
           cursor: pointer;
-          background-color: $color__secondary;
+          background-color: white;
           position: absolute;
           z-index: 3;
         }

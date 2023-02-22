@@ -77,7 +77,7 @@ body {
   display: inline-block;
 }
 
-@media screen and (min-width: 378px) and (max-width: 520px) {
+@media screen and (min-width: 378px) and (max-width: 640px) {
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__nav-label {
     cursor: pointer;
     display: block;
@@ -89,7 +89,7 @@ body {
     float: right;
     z-index: 2;
     clip-path: circle(0);
-    background-color: #b23030;
+    background-color: #fff;
     border-radius: .4em;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -117,7 +117,7 @@ body {
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .nav-label__icono-hamburguesa {
     cursor: pointer;
     z-index: 3;
-    background-color: #b23030;
+    background-color: #fff;
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -147,7 +147,7 @@ body {
     height: 290px;
     z-index: 2;
     clip-path: circle(0);
-    background-color: #b23030;
+    background-color: #fff;
     border-radius: .4em;
     flex-flow: column wrap;
     padding-top: 40px;
@@ -173,7 +173,7 @@ body {
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .nav-label__icono-hamburguesa {
     cursor: pointer;
     z-index: 3;
-    background-color: #b23030;
+    background-color: #fff;
     padding: 5px;
     display: flex;
     position: absolute;
