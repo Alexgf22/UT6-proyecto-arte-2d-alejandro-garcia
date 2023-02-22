@@ -15,24 +15,68 @@
     .main-pagina-inicio__section-escenarios {
 
         .section-escenarios__carrousel {
+            width: 90%;
+            max-width: 120em;
+            padding: 2em;
+            // falta animación
 
             .carrousel__grande {
+                width: 200%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                // falta animación
+                padding: 2em;
+
+                transition: all .5s ease;
+                transform: translateX(0%);
 
                 .grande__imagen-escenario-alejandro {
                     @include estiloEscenario;
+                    // falta animación
                 }
 
                 .grande__imagen-escenario-juanra {
                     @include estiloEscenario;
+                    // falta animación
                 }
 
                 .grande__imagen-escenario-guille {
                     @include estiloEscenario;
+                    // falta animación
                 }
 
                 .grande__imagen-escenario-victor {
                     @include estiloEscenario;
+                    // falta animación
                 }
+            }
+
+
+            .carrousel__puntos {
+                width: 100%;
+                margin: 1em 0 0;
+                padding: .4em;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+
+                .puntos__punto {
+                    width: 2em;
+                    height: 2em;
+                    margin: 1em 1em 0;
+                    // falta animación
+                }
+
+                .puntos__activo {
+                    background-color: orange;
+
+                }
+
+
+
             }
 
         }
