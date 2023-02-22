@@ -5,17 +5,17 @@
     .main-pagina-inicio__section-video {
 
         .section-video__video-principal {
-            width:800px;
+            width:1000px;
             margin: 0 auto;
             display: block;
-            padding-top: 25px;
+            padding-top: 55px;
         }
 
     }
 
 
     .main-pagina-inicio__section-escenarios {
-        position: relative;
+        margin-top: 50px;
         
         .section-escenarios__contenedor-imagenes {
             max-width: 1000px;
@@ -33,7 +33,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            margin-top: 180px;
+            margin-top: 320px;
             transform: translate(-50%, -50%);
 
 
