@@ -1,15 +1,254 @@
 .cabecera {
-
+  
+    background-color: $color__primary;
+    width: 100%;
+    position:sticky;
+    padding: 10px;
+  
     .cabecera__menu-navegacion-nav {
-        .menu-navegacion-nav__lista-cabecera {
-            .lista-cabecera__contenedor-logo-y-nombre {
-                .contenedor-logo-y-nombre__logo-pagina {
-                    width: 200px;
-                }
+    
+      .menu-navegacion-nav__lista-cabecera {
+        font-size:14px;
+  
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items:center;
+        width: 100%;
+  
+        .lista-cabecera__menu-hamburguesa {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-between;
+          width: 79%;
+  
+          .menu-hamburguesa__li {
+            list-style-type: none;
+            font-family: $fuente-titulos;
+            #li__enlace-registro {
+              width: 50px;
+              border-radius: 0.5em;
+              padding:6px;
+              color: $color__primary;
+              background-color: $color__secondary;
             }
-
+  
+            .li__a {
+              text-decoration: none;
+              color: white;
+            }
+          }
         }
-
+  
+  
+        .lista-cabecera__nav-label, .lista-cabecera__nav-input {
+          /* Aquí utilizamos el display none para ocultar el menú
+          hamburguesa cuando se encuentra en vista ordenador */
+          display: none;
+        }
+  
+        .nav-label__icono-hamburguesa {
+          width: 30px;
+        } 
+        
+  
+        .lista-cabecera__contenedor-logo-y-nombre {
+          color: white;
+          font-family: $fuente-titulos;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3px;
+  
+          .contenedor-logo-y-nombre__logo-pagina {
+            width: 45px;
+          
+          }
+          
+          .contenedor-logo-y-nombre__nombre-pagina {
+            color: white;
+            /* Aquí utilizamos un display inline-block para
+            que el nombre de Coinbase se coloque justo al lado
+            del logo de la página y no debajo */
+            display: inline-block;
+        }
+        }
+  
+        
+      }
+      }
+  
+    
+  }
+  
+  
+  
+  
+  
+  
+  // Segundo punto de ruptura
+  @media screen and (min-width: 378px) and (max-width: 520px) {
+  .cabecera {
+  
+    .cabecera__menu-navegacion-nav {
+  
+      .menu-navegacion-nav__lista-cabecera {
+  
+        .lista-cabecera__nav-label {
+          display: block;
+          /* Aquí especificamos que se ponga el puntero seleccionando
+          la imagen del menú hamburguesa cuando pasamos por encima  */
+          cursor: pointer;
+        }
+  
+        .lista-cabecera__menu-hamburguesa {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          border-radius: 0.4em;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          /* Con el column indicamos que cada elemento de la lista
+          se pone uno debajo de otro */
+          flex-flow: column wrap;
+          background-color: $color__secondary;
+          right: 2px;
+          top: 14px;
+          width: 160px;
+          height: 330px;
+          padding-top: 20px;
+          position:absolute;
+          float: right;
+          z-index: 2;
+          /* Con clip-path indicamos que se oculte
+          el menú mientras no pulsemos el botón
+          y después indicamos que la
+          transición dura 1 segundo y que se produzca a la entrada
+          y a la salida */
+          clip-path: circle(0 at center);
+          transition: clip-path 1s ease-in-out;
+  
+          .menu-hamburguesa__li {
+            .li__a {
+              color: black;
+            }
+  
+            #li__enlace-registro {
+              color: rgb(0, 0, 0);
+              background-color: $color__secondary;
+              border-radius:0;
+              padding:0;
+            }
+          }
+          
+        }
+  
+        .nav-label__icono-hamburguesa {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 15;
+          right: 5;
+          padding: 5px;
+          cursor: pointer;
+          background-color: $color__secondary;
+          position: absolute;
+          /* Con el z-index hacemos que el icono de hamburguesa
+          se posicione por encima del menú hamburguesa */
+          z-index: 3;
+        }
+  
+        }
+  
+  
+        .lista-cabecera__nav-input:checked + .lista-cabecera__menu-hamburguesa {
+          /* Indicamos que aparezca el menú y que vaya cerrándose
+          desde el 100% de tamaño hacia el centro
+          y que se abra desde el centro hasta el 100% de tamaño cuando
+          pulsamos el input de tipo checkbox */
+          clip-path: circle(100% at center);
+        }
+  
     }
-
-}
+  }
+  
+  
+  }
+  
+  
+  
+  // Tercer punto de ruptura
+  @media screen and (max-width: 378px) {
+  
+  .cabecera {
+  
+    .cabecera__menu-navegacion-nav {
+  
+      .menu-navegacion-nav__lista-cabecera {
+        position: relative;
+  
+        
+        .lista-cabecera__nav-label {
+          display: block;
+          cursor: pointer;
+        }
+  
+  
+        .lista-cabecera__menu-hamburguesa {
+          flex-flow: column wrap;
+          background-color: $color__secondary;
+          border-radius: 0.4em;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          top: 0;
+          right: 0;
+          width: 130px;
+          height: 290px;
+          padding-top: 40px;
+          padding-bottom: 25px;
+          position: absolute;
+          z-index: 2;
+          clip-path: circle(0 at center);
+          transition: clip-path 1s ease-in-out;
+  
+          .menu-hamburguesa__li {
+            .li__a {
+              color: black;
+            }
+  
+            #li__enlace-registro {
+              color: rgb(0, 0, 0);
+              background-color: $color__secondary;
+              border-radius:0;
+              padding:0;
+            }
+          }
+          
+  
+        }
+  
+        .nav-label__icono-hamburguesa {
+          display: flex;
+          top: 5;
+          right: 0;
+          padding: 5px;
+          cursor: pointer;
+          background-color: $color__secondary;
+          position: absolute;
+          z-index: 3;
+        }
+  
+        }
+  
+  
+        .lista-cabecera__nav-input:checked + .lista-cabecera__menu-hamburguesa {
+          /*  La propiedad clip-path en este caso lo que hace es indicar
+          que cuando se pulse el input checkbox aparezca el menú
+          hamburguesa */
+          clip-path: circle(100% at center);
+        }
+  
+    }
+  }
+  
+  
+  }
