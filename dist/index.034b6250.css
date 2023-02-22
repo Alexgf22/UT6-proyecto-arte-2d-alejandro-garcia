@@ -195,8 +195,9 @@ body {
   align-items: center;
   padding: 10px;
   display: flex;
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
 }
 
 .pie-pagina .pie-pagina__contenedor-redes-sociales {
