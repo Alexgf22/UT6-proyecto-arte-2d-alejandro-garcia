@@ -15,6 +15,7 @@ function showSlides(n) {
   let i;
   let escenarios = document.getElementsByClassName("contenedor-imagenes__escenario");
   let puntos = document.getElementsByClassName("puntos__punto");
+
   if (n > escenarios.length) {indiceEscenario = 1}
   if (n < 1) {indiceEscenario = escenarios.length}
   for (i = 0; i < escenarios.length; i++) {

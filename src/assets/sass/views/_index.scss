@@ -13,11 +13,12 @@
 
 
     .main-pagina-inicio__section-escenarios {
+        position: relative;
         
         .section-escenarios__contenedor-imagenes {
             max-width: 1000px;
             position: relative;
-            margin: auto;
+            margin: 0 auto;
 
             .contenedor-imagenes__escenario {
                 @include estiloEscenario;
@@ -27,6 +28,12 @@
 
 
         .section-escenarios__puntos {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: 180px;
+            transform: translate(-50%, -50%);
+
 
             .puntos__punto {
                 cursor: pointer;
@@ -36,6 +43,7 @@
                 background-color: #bbb;
                 border-radius: 50%;
                 display: inline-block;
+                margin:0 auto;
                 transition: background-color 0.6s ease;
             }
 
