@@ -245,7 +245,7 @@ body {
   display: block;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario-alejandro, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario-juanra, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario-guille, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__imagen-escenario-victor {
+.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande .grande__imagen-escenario-alejandro, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande .grande__imagen-escenario-juanra, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande .grande__imagen-escenario-guille, .main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__carrousel .carrousel__grande .grande__imagen-escenario-victor {
   width: 700px;
   margin: 0 auto;
   padding: 10px;
