@@ -4,8 +4,8 @@ const punto = document.querySelector('.puntos__punto')
 // Cuando se hace click en punto
     // Saber la posición de ese punto
     // Aplicar un transform translateX al grande
-    // Quitar la clase puntos__activo de todos los puntos
-    // Añadir la clase puntos__activo al punto que hemos hecho click
+    // Quitar la clase activo de todos los puntos
+    // Añadir la clase activo al punto que hemos hecho click
 
 
 
@@ -24,11 +24,11 @@ punto.forEach( ( cadaPunto, i)=> {
 
         // Recorremos todos los punto
         punto.forEach( ( cadaPunto, i)=> {
-            // Quitamos la clase puntos__activo a todos los punto
-            punto[i].classList.remove('puntos__activo')
+            // Quitamos la clase activo a todos los punto
+            punto[i].classList.remove('activo')
         })
         //Añadir la clase activo en el punto que hemos hecho click
-        punto[i].classList.add('puntos__activo')
+        punto[i].classList.add('activo')
 
     })
 })
