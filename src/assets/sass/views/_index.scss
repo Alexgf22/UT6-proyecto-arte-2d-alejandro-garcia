@@ -15,74 +15,63 @@
     }
 
 
+    // Escenarios
     .main-pagina-inicio__carrusel-escenarios {
-      width: 90%;
-      max-width: 120em;
-      padding: 2em;
-      // falta animación
-      overflow: hidden;
+        width:90%;
+        max-width: 120em;
+        padding:2em;
+        @include neo( 1 , 1em , 1em );
+        overflow: hidden;
 
-      .carrusel-escenarios__contenedor {
-          width: 400%;
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: space-between;
-          align-items: center;
-          // falta animación
-          padding: 2em;
-
-          transition: all .5s ease;
-          transform: translateX(0%);
-          
-
-          .contenedor__escenario-alejandro {
-              @include estiloEscenario;
-              // falta animación
-          }
-
-          .contenedor__escenario-juanra {
-              @include estiloEscenario;
-              // falta animación
-          }
-
-          .contenedor__escenario-guille {
-              @include estiloEscenario;
-              // falta animación
-          }
-
-          .contenedor__escenario-victor {
-              @include estiloEscenario;
-              // falta animación
-          }
-      }
+        .carrusel-escenarios__contenedor {
+            width: 200%;
+    
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            @include neo( 1 , 1em , 1em );
+            padding:2em;
 
 
-      .carrusel-escenarios__puntos {
-          width: 100%;
-          margin: 1em 0 0;
-          padding: .4em;
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: center;
-          align-items: center;
+            transition: all .5s ease;
+            transform: translateX(0%);
+            
+  
+            .contenedor__escenario {
+                @include estiloEscenario;
+                @include neo( 1 , 1em , 1em );
+            }
+        }
+  
+  
+        .carrusel-escenarios__puntos {
+            width:100%;
+            margin:1em 0 0;
+            padding:.4em;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        
+            .puntos__punto {
+                width:  2em;
+                height: 2em;
+                margin: 1em 1em 0;
+                @include neo( 1 , 1em , .6em );
+                list-style-type: none;
+            }
+  
+            .puntos__punto.activo {
+                background-color: lightblue;
+  
+            }
+        }
+  
+    }
 
-          .puntos__punto {
-              width: 2em;
-              height: 2em;
-              margin: 1em 1em 0;
-              // falta animación
-          }
 
-          .puntos__punto.activo {
-              background-color: lightblue;
-
-          }
-
-
-
-      }
-
-  }
+  
 
 
 

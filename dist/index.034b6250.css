@@ -1,5 +1,16 @@
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #fff;
+  --borde-negro: #00000050;
+  --marcado: #7fc3ff;
+}
+
 * {
   box-sizing: border-box;
+  vertical-align: baseline;
+  border: 0;
   margin: 0;
   padding: 0;
 }
@@ -255,12 +266,22 @@ body {
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
   width: 90%;
   max-width: 120em;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  margin-top: 60px;
   padding: 2em;
+  transition: all .4s;
   overflow: hidden;
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor {
-  width: 400%;
+  width: 200%;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
@@ -270,11 +291,18 @@ body {
   transform: translateX(0%);
 }
 
-.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario-alejandro, .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario-juanra, .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario-guille, .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario-victor {
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario {
   min-height: 10vh;
-  width: 25%;
-  margin: 0 auto;
-  padding: 10px;
+  width: calc(50% - 2em);
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  transition: all .4s;
   display: block;
 }
 
@@ -291,7 +319,13 @@ body {
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto {
   width: 2em;
   height: 2em;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .6em .6em 1.2em var(--sombra-ppal), -.6em -.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
   margin: 1em 1em 0;
+  list-style-type: none;
+  transition: all .4s;
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto.activo {
