@@ -17,7 +17,7 @@
 
 body {
   width: 100%;
-  height: 3800px;
+  height: 4400px;
   margin: 0;
 }
 
@@ -259,7 +259,7 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
   width: 1000px;
   margin: 0 auto;
-  padding-top: 55px;
+  padding-top: 30px;
   display: block;
 }
 
@@ -397,6 +397,59 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info .info__parrafo-boss {
   width: 310px;
   font-size: 16px;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-acordeon {
+  width: 90%;
+  max-width: 20rem;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .4rem .4rem .8rem var(--sombra-ppal), -.4rem -.4rem .8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1rem;
+  margin: 120px auto 0;
+  padding: 2rem;
+  transition: all .4s;
+  display: block;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque {
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .4rem .4rem .8rem var(--sombra-ppal), -.4rem -.4rem .8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1rem;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  transition: all .4s;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque .bloque__h2 {
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .4rem .4rem .8rem var(--sombra-ppal), -.4rem -.4rem .8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  transition: all .4s;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque .bloque__h2:hover {
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset .4rem .4rem .8rem var(--sombra-ppal), inset -.4rem -.4rem .8rem var(--sombra-sec);
+  border-radius: 1rem;
+  transition: all .4s;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque .bloque__contenido {
+  height: 0;
+  padding: 0;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-acordeon .activo .bloque__contenido {
+  height: 4rem;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

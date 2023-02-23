@@ -10,6 +10,7 @@
             margin: 0 auto;
             display: block;
             padding-top: 55px;
+            padding-top: 30px;
         }
 
     }
@@ -174,6 +175,51 @@
 
 
 
+
+    // Acordeón
+
+
+    .main-pagina-inicio__section-acordeon{
+        width:90%;
+        max-width: 20rem;
+        padding:2rem;
+        display: block;
+        margin:0 auto;
+        margin-top: 120px;
+        @include neo( 1, 1rem , .4rem );
+    
+        .section-acordeon__bloque{
+            margin: 0 0 1rem;
+            padding:1rem;
+            @include neo( 1, 1rem , .4rem );
+
+            .bloque__h2{
+                margin: 0 0 1rem;
+                padding:1rem;
+                @include neo( 1, 1rem , .4rem );
+                cursor: pointer;
+                &:hover{
+                @include neo( 2, 1rem , .4rem );
+                }
+            }
+
+            .bloque__contenido{
+                height: 0;
+                padding:0rem;
+                overflow: hidden;
+                transition: all .5s ease;
+            }
+
+        }
+
+    
+        .activo{
+            .bloque__contenido {
+            height: 4rem;
+            }
+        }
+
+    }
 
 
 
