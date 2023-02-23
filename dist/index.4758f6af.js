@@ -1,23 +1,20 @@
-let indiceEscenario = 1;
-showSlides(indiceEscenario);
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(indiceEscenario += n);
+const carouselContainer = document.querySelector(".carousel-container");
+const carouselDots = document.querySelectorAll(".dot");
+let currentIndex = 0;
+carouselDots.forEach((dot, index)=>{
+    dot.addEventListener("click", ()=>{
+        currentIndex = index;
+        updateCarousel();
+    });
+});
+function updateCarousel() {
+    carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    carouselDots.forEach((dot)=>dot.classList.remove("active"));
+    carouselDots[currentIndex].classList.add("active");
 }
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(indiceEscenario = n);
-}
-function showSlides(n) {
-    let i;
-    let escenarios = document.getElementsByClassName("contenedor-imagenes__escenario");
-    let puntos = document.getElementsByClassName("puntos__punto");
-    if (n > escenarios.length) indiceEscenario = 1;
-    if (n < 1) indiceEscenario = escenarios.length;
-    for(i = 0; i < escenarios.length; i++)escenarios[i].style.display = "none";
-    for(i = 0; i < puntos.length; i++)puntos[i].className = puntos[i].className.replace(" active", "");
-    escenarios[indiceEscenario - 1].style.display = "block";
-    puntos[indiceEscenario - 1].className += " active";
-}
+setInterval(()=>{
+    currentIndex = (currentIndex + 1) % carouselDots.length;
+    updateCarousel();
+}, 5000);
 
 //# sourceMappingURL=index.4758f6af.js.map
