@@ -87,8 +87,16 @@
             gap: 20px;
             align-items: center;
 
-            .contenedor-personaje-robot__parrafo {
-                width: 310px;
+            .contenedor-personaje-robot__info {
+
+                .info__titulo-robot {
+                    font-size: 26px;
+                }
+
+                .info__parrafo-robot {
+                    width: 310px;
+                }
+
             }
 
             .contenedor-personaje-robot__imagen {
@@ -111,11 +119,18 @@
                 width: 320px;
             }
 
-            .contenedor-personaje-mascota__parrafo {
-                width: 310px;
+
+            .contenedor-personaje-mascota__info {
+
+                .info__titulo-mascota {
+                    font-size: 26px;
+                }
+
+                .info__parrafo-mascota {
+                    width: 310px;
+                }
+
             }
-
-
 
         }
 
@@ -134,8 +149,16 @@
 
             }
 
-            .contenedor-boss-final__parrafo {
-                width: 310px;
+            .contenedor-boss-final__info {
+
+                .info__titulo-boss {
+                    font-size: 26px;
+                }
+
+                .info__parrafo-boss {
+                    width: 310px;
+
+                }
 
             }
 
