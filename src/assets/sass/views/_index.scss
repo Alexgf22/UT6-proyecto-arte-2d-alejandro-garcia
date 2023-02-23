@@ -24,7 +24,7 @@
         overflow: hidden;
 
         .carrusel-escenarios__contenedor {
-            width: 200%;
+            width: 400%;
     
             display: flex;
             flex-flow: row nowrap;
@@ -62,7 +62,7 @@
                 list-style-type: none;
             }
   
-            .puntos__punto.activo {
+            .activo {
                 background-color: lightblue;
   
             }

@@ -270,14 +270,13 @@ body {
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   border-radius: 1em;
-  margin-top: 60px;
   padding: 2em;
   transition: all .4s;
   overflow: hidden;
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor {
-  width: 200%;
+  width: 400%;
   color: var(--negro);
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
@@ -292,16 +291,15 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario {
+  width: calc(25% - 4em);
   min-height: 10vh;
-  width: calc(50% - 2em);
-  max-width: 100%;
-  width: 100%;
   object-fit: cover;
   object-position: center center;
   color: var(--negro);
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   border-radius: 1em;
+  margin: 0 auto;
   transition: all .4s;
   display: block;
 }
@@ -328,7 +326,7 @@ body {
   transition: all .4s;
 }
 
-.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto.activo {
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .activo {
   background-color: #add8e6;
 }
 

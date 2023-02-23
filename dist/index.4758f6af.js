@@ -1,5 +1,5 @@
 const grande = document.querySelector(".carrusel-escenarios__contenedor");
-const punto = document.querySelector(".puntos__punto");
+const punto = document.querySelectorAll(".puntos__punto");
 // Cuando se hace click en punto
 // Saber la posición de ese punto
 // Aplicar un transform translateX al grande
@@ -12,7 +12,7 @@ punto.forEach((cadaPunto, i)=>{
         // Guardar la posición de ese punto
         let posicion = i;
         // Calculando el espacio que debe desplazarse el grande
-        let operacion = posicion * -50;
+        let operacion = posicion * -25;
         // Movemos el grande
         grande.style.transform = `translateX(${operacion}%)`;
         // Recorremos todos los punto
