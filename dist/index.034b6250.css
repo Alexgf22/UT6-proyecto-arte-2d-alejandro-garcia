@@ -252,43 +252,50 @@ body {
   display: block;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-escenarios {
-  width: 100%;
-  height: 100%;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  position: relative;
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
+  width: 90%;
+  max-width: 120em;
+  padding: 2em;
+  overflow: hidden;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__contenedor-imagenes {
-  width: 100%;
-  height: 100%;
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor {
+  width: 400%;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: all .5s;
   display: flex;
+  transform: translateX(0%);
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__contenedor-imagenes .contenedor-imagenes__escenario {
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario-alejandro, .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario-juanra, .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario-guille, .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor .contenedor__escenario-victor {
+  min-height: 10vh;
   width: 25%;
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__puntos {
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos {
+  width: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0;
+  padding: .4em;
   display: flex;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__puntos .puntos__punto {
-  width: 10px;
-  height: 10px;
-  cursor: pointer;
-  background-color: #bbb;
-  border-radius: 50%;
-  margin: 0 5px;
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-escenarios .section-escenarios__puntos .activo {
-  background-color: #333;
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto.activo {
+  background-color: #add8e6;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes {

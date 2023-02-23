@@ -15,43 +15,75 @@
     }
 
 
-    .carousel-container {
-        max-width: 1000px;
-        margin: 0 auto;
+    .main-pagina-inicio__carrusel-escenarios {
+      width: 90%;
+      max-width: 120em;
+      padding: 2em;
+      // falta animación
+      overflow: hidden;
+
+      .carrusel-escenarios__contenedor {
+          width: 400%;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          // falta animación
+          padding: 2em;
+
+          transition: all .5s ease;
+          transform: translateX(0%);
+          
+
+          .contenedor__escenario-alejandro {
+              @include estiloEscenario;
+              // falta animación
+          }
+
+          .contenedor__escenario-juanra {
+              @include estiloEscenario;
+              // falta animación
+          }
+
+          .contenedor__escenario-guille {
+              @include estiloEscenario;
+              // falta animación
+          }
+
+          .contenedor__escenario-victor {
+              @include estiloEscenario;
+              // falta animación
+          }
       }
-      
-      .carousel-images {
-        display: flex;
-        overflow-x: scroll;
+
+
+      .carrusel-escenarios__puntos {
+          width: 100%;
+          margin: 1em 0 0;
+          padding: .4em;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+
+          .puntos__punto {
+              width: 2em;
+              height: 2em;
+              margin: 1em 1em 0;
+              // falta animación
+          }
+
+          .puntos__punto.activo {
+              background-color: lightblue;
+
+          }
+
+
+
       }
-      
-      .image-container {
-        width: 100%;
-        margin-right: 10px;
-      }
-      
-      .image-container img {
-        width: 100%;
-        height: auto;
-      }
-      
-      .carousel-btn {
-        display: block;
-        margin: 20px auto;
-        padding: 10px 20px;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      
-      @media screen and (max-width: 768px) {
-        .carousel-container {
-          max-width: 95%;
-        }
-      }
-      
+
+  }
+
 
 
 
