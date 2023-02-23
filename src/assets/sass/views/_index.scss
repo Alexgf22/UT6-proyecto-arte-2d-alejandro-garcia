@@ -75,10 +75,11 @@
 
 
 
-
+    // Personajes
     .main-pagina-inicio__section-personajes {
         margin-top:200px;
 
+        // Primer personaje
         .section-personajes__contenedor-personaje-robot {
 
             display: flex;
@@ -97,7 +98,7 @@
 
 
 
-
+        // Segundo personaje
         .section-personajes__contenedor-personaje-mascota {
 
             margin-top: 50px;
@@ -119,6 +120,7 @@
         }
 
 
+        // Tercer personaje
         .section-personajes__contenedor-boss-final{
 
             margin-top: 50px;
