@@ -315,7 +315,7 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot {
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 20px;
   display: flex;
 }
 
