@@ -92,7 +92,7 @@
 
             .contenedor-personaje-robot__info {
                 width: 50%;
-                padding-left: 2rem;
+                padding-left: 6rem;
                 text-align: right;
 
                 .info__titulo-robot {
@@ -120,17 +120,19 @@
             margin-top: 50px;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 40px;
             align-items: center;
 
             .contenedor-personaje-mascota__imagen {
                 width: 50%;
+                width: 400px;
+                margin-right: 150px;
             }
 
 
             .contenedor-personaje-mascota__info {
                 width: 50%;
-                padding-left: 2rem;
+                padding-right: 2rem;
                 text-align: left;
 
                 .info__titulo-mascota {
@@ -159,17 +161,19 @@
 
             .contenedor-boss-final__imagen {
                 width: 50%;
+                padding-right: 20px;
 
             }
 
             .contenedor-boss-final__info {
                 width: 50%;
-                padding-left: 2rem;
+                padding-left: 6rem;
                 text-align: right;
 
                 .info__titulo-boss {
                     font-size: 32px;
                     padding-bottom: 5px;
+                    text-align: center;
                 }
 
                 .info__parrafo-boss {
@@ -194,28 +198,30 @@
         max-width: 20rem;
         padding:2rem;
         display: block;
-        margin:0 auto;
+        margin-left: 1200;
         margin-top: 120px;
-        @include neo( 1, 1rem , .4rem );
     
         .section-acordeon__bloque{
             margin: 0 0 1rem;
             padding:1rem;
-            @include neo( 1, 1rem , .4rem );
 
             .bloque__h2{
                 margin: 0 0 1rem;
+                font-size: 30px;
                 padding:1rem;
-                @include neo( 1, 1rem , .4rem );
+                background-color: $color__primary;
+                border-radius: 0.3em;
+                text-align: center;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                color: white;
                 cursor: pointer;
-                &:hover{
-                @include neo( 2, 1rem , .4rem );
-                }
             }
 
             .bloque__contenido{
                 height: 0;
+                font-size: 18px;
                 padding:0rem;
+                text-align: center;
                 overflow: hidden;
                 transition: all .5s ease;
             }

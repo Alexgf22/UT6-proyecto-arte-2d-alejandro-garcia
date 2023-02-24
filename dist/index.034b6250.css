@@ -17,7 +17,7 @@
 
 body {
   width: 100%;
-  height: 4400px;
+  height: 5400px;
   margin: 0;
 }
 
@@ -345,7 +345,7 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info {
   width: 50%;
   text-align: right;
-  padding-left: 2rem;
+  padding-left: 6rem;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__titulo-robot {
@@ -365,19 +365,21 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota {
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   margin-top: 50px;
   display: flex;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__imagen {
   width: 50%;
+  width: 400px;
+  margin-right: 150px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info {
   width: 50%;
   text-align: left;
-  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info .info__titulo-mascota {
@@ -399,15 +401,17 @@ body {
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__imagen {
   width: 50%;
+  padding-right: 20px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info {
   width: 50%;
   text-align: right;
-  padding-left: 2rem;
+  padding-left: 6rem;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info .info__titulo-boss {
+  text-align: center;
   padding-bottom: 5px;
   font-size: 32px;
 }
@@ -419,48 +423,34 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-acordeon {
   width: 90%;
   max-width: 20rem;
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: .4rem .4rem .8rem var(--sombra-ppal), -.4rem -.4rem .8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  border-radius: 1rem;
-  margin: 120px auto 0;
+  margin-top: 120px;
+  margin-left: 1200px;
   padding: 2rem;
-  transition: all .4s;
   display: block;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque {
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: .4rem .4rem .8rem var(--sombra-ppal), -.4rem -.4rem .8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  border-radius: 1rem;
   margin: 0 0 1rem;
   padding: 1rem;
-  transition: all .4s;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque .bloque__h2 {
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: .4rem .4rem .8rem var(--sombra-ppal), -.4rem -.4rem .8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  text-align: center;
+  color: #fff;
   cursor: pointer;
-  border-radius: 1rem;
+  background-color: #65737e;
+  border-radius: .3em;
   margin: 0 0 1rem;
   padding: 1rem;
-  transition: all .4s;
-}
-
-.main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque .bloque__h2:hover {
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset .4rem .4rem .8rem var(--sombra-ppal), inset -.4rem -.4rem .8rem var(--sombra-sec);
-  border-radius: 1rem;
-  transition: all .4s;
+  font-size: 30px;
+  box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque .bloque__contenido {
   height: 0;
+  text-align: center;
   padding: 0;
+  font-size: 18px;
   transition: all .5s;
   overflow: hidden;
 }

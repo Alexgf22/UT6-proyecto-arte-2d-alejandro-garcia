@@ -1,6 +1,5 @@
 const grande = document.querySelector('.carrusel-escenarios__contenedor')
 const punto = document.querySelectorAll('.puntos__punto')
-
 // Cuando se hace click en punto
     // Saber la posición de ese punto
     // Aplicar un transform translateX al grande
