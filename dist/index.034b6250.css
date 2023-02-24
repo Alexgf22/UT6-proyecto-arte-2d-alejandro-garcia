@@ -23,6 +23,7 @@ body {
 
 .cabecera {
   width: 100%;
+  height: 100px;
   background-color: #65737e;
   padding: 10px;
   position: sticky;
@@ -33,7 +34,7 @@ body {
   flex-flow: wrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 26px;
   display: flex;
 }
 
@@ -81,7 +82,7 @@ body {
 }
 
 .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__contenedor-logo-y-nombre .contenedor-logo-y-nombre__logo-pagina {
-  width: 45px;
+  width: 65px;
 }
 
 .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__contenedor-logo-y-nombre .contenedor-logo-y-nombre__nombre-pagina {
@@ -200,7 +201,7 @@ body {
 
 .pie-pagina {
   width: 100%;
-  height: 55px;
+  height: 80px;
   background-color: #65737e;
   flex-flow: wrap;
   justify-content: space-between;
@@ -217,7 +218,7 @@ body {
 }
 
 .pie-pagina .pie-pagina__contenedor-redes-sociales .contenedor-redes-sociales__instagram-icono {
-  width: 18px;
+  width: 25px;
   color: #fff;
 }
 
@@ -225,11 +226,11 @@ body {
   color: #fff;
   justify-self: flex-start;
   font-family: Staatliches;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .pie-pagina .pie-pagina__contenedor-redes-sociales .contenedor-redes-sociales__facebook-icono {
-  width: 18px;
+  width: 25px;
   color: #fff;
 }
 
@@ -237,7 +238,7 @@ body {
   color: #fff;
   justify-self: center;
   font-family: Staatliches;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 378px) and (max-width: 520px) {
@@ -256,33 +257,34 @@ body {
   height: 1400px;
 }
 
+.main-pagina-inicio .main-pagina-inicio__section-video {
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
 .main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
   width: 1000px;
-  margin: 0 auto;
-  padding-top: 30px;
+  width: 90%;
+  height: 100%;
+  border-radius: .5em;
+  margin: 55px auto 0;
   display: block;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 15px #00000059;
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
   width: 90%;
   max-width: 120em;
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  border-radius: 1em;
   margin: 0 auto;
-  padding: 2em;
-  transition: all .4s;
+  padding: 20px 2em 2em;
   display: block;
   overflow: hidden;
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor {
   width: 400%;
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  border-radius: 1em;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
@@ -297,13 +299,10 @@ body {
   min-height: 10vh;
   object-fit: cover;
   object-position: center center;
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  border-radius: 1em;
-  margin: 0 auto;
-  transition: all .4s;
+  border-radius: .3em;
+  margin: 0 auto 0 20px;
   display: block;
+  box-shadow: 0 3px 8px #0000003d;
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos {
@@ -321,7 +320,7 @@ body {
   height: 2em;
   color: var(--negro);
   background-color: var(--blanco);
-  box-shadow: .6em .6em 1.2em var(--sombra-ppal), -.6em -.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  box-shadow: .5em .5em 1em var(--sombra-ppal), -.5em -.5em 1em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   border-radius: 1em;
   margin: 1em 1em 0;
   list-style-type: none;
@@ -329,16 +328,18 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .activo {
-  background-color: #add8e6;
+  background-color: #9da1a3;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes {
-  margin-top: 200px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot {
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
   display: flex;
 }
 
@@ -360,6 +361,7 @@ body {
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__imagen {
   width: 50%;
+  width: 680px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota {
@@ -372,8 +374,8 @@ body {
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__imagen {
   width: 50%;
-  width: 400px;
-  margin-right: 150px;
+  width: 260px;
+  margin-right: 60px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info {

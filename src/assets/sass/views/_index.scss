@@ -4,13 +4,22 @@
 
     // Vídeo de la misma temática
     .main-pagina-inicio__section-video {
+        padding-bottom: 60px;
+
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
 
         .section-video__video-principal {
             width:1000px;
             margin: 0 auto;
             display: block;
-            padding-top: 55px;
-            padding-top: 30px;
+            margin-top: 55px;
+            border-radius: 0.5em;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 100%;
         }
 
     }
@@ -21,9 +30,10 @@
         width:90%;
         max-width: 120em;
         padding:2em;
+        padding-top: 20px;
+        margin-top: 90px;
         display: block;
         margin:0 auto;
-        @include neo( 1 , 1em , 1em );
         overflow: hidden;
 
         .carrusel-escenarios__contenedor {
@@ -33,7 +43,6 @@
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            @include neo( 1 , 1em , 1em );
             padding:2em;
 
 
@@ -43,7 +52,6 @@
   
             .contenedor__escenario {
                 @include estiloEscenario;
-                @include neo( 1 , 1em , 1em );
             }
         }
   
@@ -61,12 +69,12 @@
                 width:  2em;
                 height: 2em;
                 margin: 1em 1em 0;
-                @include neo( 1 , 1em , .6em );
+                @include neo( 1 , 1em , .5em );
                 list-style-type: none;
             }
   
             .activo {
-                background-color: lightblue;
+                background-color: rgb(157, 161, 163);
   
             }
         }
@@ -81,13 +89,15 @@
     // Personajes
     .main-pagina-inicio__section-personajes {
         margin-top:200px;
+        max-width: 980px;
+        margin: 0 auto;
 
         // Primer personaje
         .section-personajes__contenedor-personaje-robot {
 
             display: flex;
             justify-content: center;
-            //gap: 20px;
+            padding-top: 80px;
             align-items: center;
 
             .contenedor-personaje-robot__info {
@@ -109,6 +119,7 @@
 
             .contenedor-personaje-robot__imagen {
                 width: 50%;
+                width: 680px;
             }
         }
 
@@ -125,8 +136,8 @@
 
             .contenedor-personaje-mascota__imagen {
                 width: 50%;
-                width: 400px;
-                margin-right: 150px;
+                width: 260px;
+                margin-right: 60px;
             }
 
 

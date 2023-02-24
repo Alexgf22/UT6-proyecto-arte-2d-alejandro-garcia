@@ -4,11 +4,12 @@
     width: 100%;
     position:sticky;
     padding: 10px;
+    height: 100px;
   
     .cabecera__menu-navegacion-nav {
     
       .menu-navegacion-nav__lista-cabecera {
-        font-size:14px;
+        font-size:26px;
   
         display:flex;
         flex-flow: row wrap;
@@ -62,9 +63,7 @@
           gap: 3px;
   
           .contenedor-logo-y-nombre__logo-pagina {
-            width: 45px;
-
-          
+            width: 65px;
           }
           
           .contenedor-logo-y-nombre__nombre-pagina {
