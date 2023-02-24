@@ -258,12 +258,11 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-video {
-  padding-bottom: 56.25%;
+  padding-bottom: 60px;
   position: relative;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
-  width: 1000px;
   width: 90%;
   height: 100%;
   border-radius: .5em;

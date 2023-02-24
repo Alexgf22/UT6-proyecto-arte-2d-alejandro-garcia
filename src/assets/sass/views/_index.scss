@@ -5,12 +5,11 @@
     // Vídeo de la misma temática
     .main-pagina-inicio__section-video {
         padding-bottom: 60px;
-
         position: relative;
-        padding-bottom: 56.25%; /* 16/9 ratio */
+        //padding-bottom: 56.25%; /* 16/9 ratio */
 
         .section-video__video-principal {
-            width:1000px;
+            width:90%;
             margin: 0 auto;
             display: block;
             margin-top: 55px;
@@ -18,7 +17,6 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             top: 0;
             left: 0;
-            width: 90%;
             height: 100%;
         }
 
