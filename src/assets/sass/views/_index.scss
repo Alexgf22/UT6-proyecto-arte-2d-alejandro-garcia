@@ -203,14 +203,36 @@
 
     .main-pagina-inicio__section-dinamica-juego {
 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
+        // Escenario con personaje
+        .section-dinamica-juego__contenedor-escenario-personaje {
+            padding-top: 190px;
+
+            .contenedor-escenario-personaje__titulo {
+                font-size: 30px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+            .contenedor-escenario-personaje__escenario {
+                border-radius: 0.3em;
+                width: 900px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+            }
+
+        }
+
+
+
+        // Acordeón
         .section-dinamica-juego__contenedor-acordeon{
             width:90%;
             max-width: 20rem;
             padding:2rem;
-            display: block;
-            margin-left: 1200;
-            margin-top: 120px;
+            padding-top: 260px;
         
             .contenedor-acordeon__bloque{
                 margin: 0 0 1rem;

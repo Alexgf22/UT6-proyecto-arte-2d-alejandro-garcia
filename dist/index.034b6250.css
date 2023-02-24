@@ -421,21 +421,40 @@ body {
   font-size: 16px;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-acordeon {
-  width: 90%;
-  max-width: 20rem;
-  margin-top: 120px;
-  margin-left: 1200px;
-  padding: 2rem;
-  display: block;
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque {
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje {
+  padding-top: 190px;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__titulo {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
+  width: 900px;
+  border-radius: .3em;
+  box-shadow: 0 3px 8px #0000003d;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon {
+  width: 90%;
+  max-width: 20rem;
+  padding: 260px 2rem 2rem;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque {
   margin: 0 0 1rem;
   padding: 1rem;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque .bloque__h2 {
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__h2 {
   text-align: center;
   color: #fff;
   cursor: pointer;
@@ -447,7 +466,7 @@ body {
   box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-acordeon .section-acordeon__bloque .bloque__contenido {
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
   height: 0;
   text-align: center;
   padding: 0;
@@ -456,7 +475,7 @@ body {
   overflow: hidden;
 }
 
-.main-pagina-inicio .main-pagina-inicio__section-acordeon .activo .bloque__contenido {
+.main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .activo .bloque__contenido {
   height: 4rem;
 }
 

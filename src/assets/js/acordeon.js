@@ -1,4 +1,4 @@
-const bloque    = document.querySelectorAll('.section-acordeon__bloque')
+const bloque    = document.querySelectorAll('.contenedor-acordeon__bloque')
 const h2        = document.querySelectorAll('.bloque__h2')
     
 
