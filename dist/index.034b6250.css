@@ -16,7 +16,7 @@
 
 body {
   width: 100%;
-  height: 4600px;
+  height: 4900px;
   background-color: #c9c2c2;
   margin: 0;
 }
@@ -445,8 +445,7 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 900px;
   border-radius: .3em;
   box-shadow: 0 3px 8px #0000003d;
 }
@@ -506,8 +505,18 @@ body {
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 680px) and (max-width: 980px) {
   .main-pagina-inicio__section-dinamica-juego {
+    flex-direction: column;
+  }
+
+  .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot, .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota, .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final, .main-pagina-inicio__section-dinamica-juego {
     flex-direction: column;
   }
 

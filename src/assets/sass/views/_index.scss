@@ -358,7 +358,7 @@
 
 
 // Segundo punto de ruptura
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 680px) and (max-width: 980px) {
 
     .main-pagina-inicio__section-dinamica-juego {
         flex-direction: column;
@@ -373,6 +373,55 @@
     }
 
 
+
+
+
+}
+
+
+
+
+
+// Tercer punto de ruptura
+@media screen and (max-width: 680px) {
+
+
+    
+    // Personajes
+    .main-pagina-inicio__section-personajes {
+        // Primer personaje
+        .section-personajes__contenedor-personaje-robot { 
+            flex-direction: column;
+        }
+
+        // Segundo personaje
+        .section-personajes__contenedor-personaje-mascota {
+            flex-direction: column;
+        }
+
+        // Tercer personaje
+        .section-personajes__contenedor-boss-final{
+            flex-direction: column;
+        }
+
+
+    }
+
+
+
+
+    // Dinámica juego
+    .main-pagina-inicio__section-dinamica-juego {
+        flex-direction: column;
+
+        .section-dinamica-juego__contenedor-escenario-personaje { 
+
+            .contenedor-escenario-personaje__escenario { 
+                width: 500px;
+            }
+
+        }
+    }
 
 
 
