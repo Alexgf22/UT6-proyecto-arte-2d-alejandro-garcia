@@ -169,7 +169,6 @@
             margin-top: 50px;
             display: flex;
             justify-content: center;
-            //gap: 60px;
             align-items: center;
 
             .contenedor-boss-final__imagen {
@@ -182,6 +181,8 @@
                 width: 50%;
                 padding-left: 6rem;
                 text-align: right;
+                padding-top: 40px;
+                padding-right: 30px;
 
                 .info__titulo-boss {
                     font-size: 32px;
@@ -288,6 +289,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        padding-top: 110px;
 
         // Música de fondo del videojuego 
         .section-audios__musica-juego {
@@ -296,7 +298,7 @@
                 font-size: 30px;
                 text-align: center;
                 padding-top: 120px;
-                padding-bottom: 30px;
+                padding-bottom: 40px;
             }
 
 
@@ -310,7 +312,7 @@
                 font-size: 30px;
                 text-align: center;
                 padding-top: 120px;
-                padding-bottom: 30px;
+                padding-bottom: 40px;
             }
 
         }
@@ -323,7 +325,7 @@
                 font-size: 30px;
                 text-align: center;
                 padding-top: 120px;
-                padding-bottom: 30px;
+                padding-bottom: 40px;
             }
 
 
@@ -357,9 +359,30 @@
 }
 
 
+
 // Segundo punto de ruptura
+@media screen and (min-width: 980px) and (max-width: 1045px) {
+
+    // Dinámica juego
+    .main-pagina-inicio__section-dinamica-juego {
+        flex-direction: column;
+    }
+
+    // Audios
+    .main-pagina-inicio__section-audios { 
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+// Tercer punto de ruptura
 @media screen and (min-width: 680px) and (max-width: 980px) {
 
+    // Dinámica juego
     .main-pagina-inicio__section-dinamica-juego {
         flex-direction: column;
 
@@ -374,6 +397,12 @@
 
 
 
+    // Audios
+    .main-pagina-inicio__section-audios { 
+        flex-direction: column;
+    }
+
+
 
 
 }
@@ -382,7 +411,7 @@
 
 
 
-// Tercer punto de ruptura
+// Cuarto punto de ruptura
 @media screen and (max-width: 680px) {
 
 
@@ -392,16 +421,29 @@
         // Primer personaje
         .section-personajes__contenedor-personaje-robot { 
             flex-direction: column;
+
+            .contenedor-personaje-robot__info {
+                margin-right: 130px;
+            }
         }
 
         // Segundo personaje
         .section-personajes__contenedor-personaje-mascota {
             flex-direction: column;
+
+            .contenedor-personaje-mascota__info {
+                padding-left: 0;
+            }
         }
 
         // Tercer personaje
         .section-personajes__contenedor-boss-final{
             flex-direction: column;
+
+            .contenedor-boss-final__info {
+                padding-bottom: 30px;
+                margin-right: 110px;
+            }
         }
 
 
@@ -421,6 +463,12 @@
             }
 
         }
+    }
+
+
+    // Audios
+    .main-pagina-inicio__section-audios { 
+        flex-direction: column;
     }
 
 
