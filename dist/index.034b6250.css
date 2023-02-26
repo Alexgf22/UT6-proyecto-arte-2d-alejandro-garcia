@@ -18,13 +18,14 @@
 body {
   width: 100%;
   height: 4600px;
+  background-color: #c9c2c2;
   margin: 0;
 }
 
 .cabecera {
   width: 100%;
   height: 100px;
-  background-color: #65737e;
+  background-color: #485660;
   padding: 10px;
   position: sticky;
 }
@@ -53,8 +54,8 @@ body {
 
 .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li #li__enlace-registro {
   width: 50px;
-  color: #65737e;
-  background-color: #b23030;
+  color: #485660;
+  background-color: #c9c2c2;
   border-radius: .5em;
   padding: 6px;
 }
@@ -102,7 +103,7 @@ body {
     float: right;
     z-index: 2;
     clip-path: circle(0);
-    background-color: #fff;
+    background-image: linear-gradient(to top, #8ac0ff, #b4cdff, #d3dcff, #ecedfe, #fff);
     border-radius: .4em;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -122,7 +123,7 @@ body {
 
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li #li__enlace-registro {
     color: #000;
-    background-color: #b23030;
+    background-color: #c9c2c2;
     border-radius: 0;
     padding: 0;
   }
@@ -136,7 +137,7 @@ body {
     padding: 5px;
     display: flex;
     position: absolute;
-    top: 15px;
+    top: 18px;
     right: 5px;
   }
 
@@ -158,9 +159,9 @@ body {
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa {
     width: 130px;
     height: 290px;
-    z-index: 2;
+    z-index: 3;
     clip-path: circle(0);
-    background-color: #fff;
+    background-image: linear-gradient(to top, #8ac0ff, #b4cdff, #d3dcff, #ecedfe, #fff);
     border-radius: .4em;
     flex-flow: column wrap;
     padding-top: 40px;
@@ -178,7 +179,7 @@ body {
 
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__menu-hamburguesa .menu-hamburguesa__li #li__enlace-registro {
     color: #000;
-    background-color: #b23030;
+    background-color: #c9c2c2;
     border-radius: 0;
     padding: 0;
   }
@@ -190,7 +191,7 @@ body {
     padding: 5px;
     display: flex;
     position: absolute;
-    top: 5px;
+    top: 8px;
     right: 0;
   }
 
@@ -202,7 +203,7 @@ body {
 .pie-pagina {
   width: 100%;
   height: 80px;
-  background-color: #65737e;
+  background-color: #485660;
   flex-flow: wrap;
   justify-content: space-between;
   align-items: center;
@@ -264,6 +265,7 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
   width: 90%;
   height: 100%;
+  z-index: -2;
   border-radius: .5em;
   margin: 55px auto 0;
   display: block;
@@ -457,7 +459,7 @@ body {
   text-align: center;
   color: #fff;
   cursor: pointer;
-  background-color: #65737e;
+  background-color: #485660;
   border-radius: .3em;
   margin: 0 0 1rem;
   padding: 1rem;

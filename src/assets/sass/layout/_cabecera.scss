@@ -111,13 +111,13 @@
           /* Con el column indicamos que cada elemento de la lista
           se pone uno debajo de otro */
           flex-flow: column wrap;
-          background-color: white;
+          background-image: linear-gradient(to top, #8ac0ff, #b4cdff, #d3dcff, #ecedfe, #ffffff);
           right: 2px;
           top: 14px;
           width: 160px;
           height: 330px;
           padding-top: 20px;
-          position:absolute;
+          position: absolute;
           float: right;
           z-index: 2;
           /* Con clip-path indicamos que se oculte
@@ -147,7 +147,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          top: 15;
+          top: 18;
           right: 5;
           padding: 5px;
           cursor: pointer;
@@ -196,7 +196,7 @@
   
         .lista-cabecera__menu-hamburguesa {
           flex-flow: column wrap;
-          background-color: white;
+          background-image: linear-gradient(to top, #8ac0ff, #b4cdff, #d3dcff, #ecedfe, #ffffff);
           border-radius: 0.4em;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
           top: 0;
@@ -206,7 +206,7 @@
           padding-top: 40px;
           padding-bottom: 25px;
           position: absolute;
-          z-index: 2;
+          z-index: 3;
           clip-path: circle(0 at center);
           transition: clip-path 1s ease-in-out;
   
@@ -228,7 +228,7 @@
   
         .nav-label__icono-hamburguesa {
           display: flex;
-          top: 5;
+          top: 8;
           right: 0;
           padding: 5px;
           cursor: pointer;
