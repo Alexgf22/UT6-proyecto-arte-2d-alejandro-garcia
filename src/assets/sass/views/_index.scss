@@ -52,6 +52,7 @@
   
             .contenedor__escenario {
                 @include estiloEscenario;
+                @include neo( 1 , 1em , 1em );
             }
         }
   
@@ -71,10 +72,11 @@
                 margin: 1em 1em 0;
                 @include neo( 1 , 1em , .5em );
                 list-style-type: none;
+                cursor: pointer;
             }
   
             .activo {
-                background-color: rgb(157, 161, 163);
+                background-color: rgb(98, 98, 98);
   
             }
         }
@@ -208,6 +210,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        //flex-direction: column;
 
         // Escenario con personaje
         .section-dinamica-juego__contenedor-escenario-personaje {
@@ -279,7 +282,7 @@
 
 
 
-
+    // Audios
 
     .main-pagina-inicio__section-audios {
         display: flex;
@@ -332,6 +335,48 @@
 
 }
 
+
+
+
+
+
+// Responsive
+
+// Primer punto de ruptura
+@media screen and (min-width: 980px) and (max-width: 1260px) {
+
+    
+
+    .main-pagina-inicio__section-dinamica-juego {
+        flex-direction: column;
+    }
+    
+
+
+
+}
+
+
+// Segundo punto de ruptura
+@media screen and (max-width: 980px) {
+
+    .main-pagina-inicio__section-dinamica-juego {
+        flex-direction: column;
+
+        .section-dinamica-juego__contenedor-escenario-personaje { 
+
+            .contenedor-escenario-personaje__escenario { 
+                width: 500px;
+            }
+
+        }
+    }
+
+
+
+
+
+}
 
 
 
