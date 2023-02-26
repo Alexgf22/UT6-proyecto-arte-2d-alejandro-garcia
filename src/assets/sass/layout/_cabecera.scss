@@ -3,7 +3,7 @@
     background-color: $color__primary;
     width: 100%;
     position:sticky;
-    padding: 10px;
+    padding: 20px;
     height: 100px;
   
     .cabecera__menu-navegacion-nav {
@@ -13,7 +13,7 @@
   
         display:flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items:center;
         width: 100%;
   
@@ -88,7 +88,7 @@
   
   
   // Segundo punto de ruptura
-  @media screen and (min-width: 378px) and (max-width: 640px) {
+  @media screen and (min-width: 378px) and (max-width: 1056px) {
   .cabecera {
   
     .cabecera__menu-navegacion-nav {
@@ -111,12 +111,13 @@
           /* Con el column indicamos que cada elemento de la lista
           se pone uno debajo de otro */
           flex-flow: column wrap;
-          background-image: linear-gradient(to top, #8ac0ff, #b4cdff, #d3dcff, #ecedfe, #ffffff);
+          background-image: linear-gradient(to top, #676e77, #8c9097, #b2b3b9, #d8d8db, #ffffff);
           right: 2px;
-          top: 14px;
+          top: 16px;
           width: 160px;
           height: 330px;
           padding-top: 20px;
+          margin-top: 10px;
           position: absolute;
           float: right;
           z-index: 2;
@@ -148,10 +149,11 @@
           justify-content: center;
           align-items: center;
           top: 18;
+          margin-top: 16px;
           right: 5;
           padding: 5px;
           cursor: pointer;
-          background-color: white;
+          background-color: #ffffff;
           position: absolute;
           /* Con el z-index hacemos que el icono de hamburguesa
           se posicione por encima del menú hamburguesa */
@@ -196,7 +198,7 @@
   
         .lista-cabecera__menu-hamburguesa {
           flex-flow: column wrap;
-          background-image: linear-gradient(to top, #8ac0ff, #b4cdff, #d3dcff, #ecedfe, #ffffff);
+          background-image: linear-gradient(to top, #676e77, #8c9097, #b2b3b9, #d8d8db, #ffffff);
           border-radius: 0.4em;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
           top: 0;
@@ -232,7 +234,7 @@
           right: 0;
           padding: 5px;
           cursor: pointer;
-          background-color: white;
+          background-color: #ffffff;
           position: absolute;
           z-index: 3;
         }

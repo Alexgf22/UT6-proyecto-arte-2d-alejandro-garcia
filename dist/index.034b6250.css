@@ -1,7 +1,6 @@
 :root {
-  --negro: #393939;
+  --negro: #2f2f2f;
   --blanco: #ececec;
-  --sombra-ppal: #c9c9c9;
   --sombra-sec: #fff;
   --borde-negro: #00000050;
   --marcado: #7fc3ff;
@@ -26,7 +25,7 @@ body {
   width: 100%;
   height: 100px;
   background-color: #485660;
-  padding: 10px;
+  padding: 20px;
   position: sticky;
 }
 
@@ -91,7 +90,7 @@ body {
   display: inline-block;
 }
 
-@media screen and (min-width: 378px) and (max-width: 640px) {
+@media screen and (min-width: 378px) and (max-width: 1056px) {
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .lista-cabecera__nav-label {
     cursor: pointer;
     display: block;
@@ -103,16 +102,17 @@ body {
     float: right;
     z-index: 2;
     clip-path: circle(0);
-    background-image: linear-gradient(to top, #8ac0ff, #b4cdff, #d3dcff, #ecedfe, #fff);
+    background-image: linear-gradient(to top, #676e77, #8c9097, #b2b3b9, #d8d8db, #fff);
     border-radius: .4em;
     flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 10px;
     padding-top: 20px;
     transition: clip-path 1s ease-in-out;
     display: flex;
     position: absolute;
-    top: 14px;
+    top: 16px;
     right: 2px;
     box-shadow: 0 14px 28px #00000040, 0 10px 10px #00000038;
   }
@@ -134,6 +134,7 @@ body {
     background-color: #fff;
     justify-content: center;
     align-items: center;
+    margin-top: 16px;
     padding: 5px;
     display: flex;
     position: absolute;
@@ -161,7 +162,7 @@ body {
     height: 290px;
     z-index: 3;
     clip-path: circle(0);
-    background-image: linear-gradient(to top, #8ac0ff, #b4cdff, #d3dcff, #ecedfe, #fff);
+    background-image: linear-gradient(to top, #676e77, #8c9097, #b2b3b9, #d8d8db, #fff);
     border-radius: .4em;
     flex-flow: column wrap;
     padding-top: 40px;
@@ -299,10 +300,14 @@ body {
   min-height: 10vh;
   object-fit: cover;
   object-position: center center;
-  border-radius: .3em;
-  margin: 0 auto 0 20px;
-  display: block;
+  color: var(--negro);
+  background-color: var(--blanco);
   box-shadow: 0 3px 8px #0000003d;
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  margin: 0 auto 0 20px;
+  transition: all .4s;
+  display: block;
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos {
@@ -321,6 +326,7 @@ body {
   color: var(--negro);
   background-color: var(--blanco);
   box-shadow: .5em .5em 1em var(--sombra-ppal), -.5em -.5em 1em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
   border-radius: 1em;
   margin: 1em 1em 0;
   list-style-type: none;
@@ -328,7 +334,7 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .activo {
-  background-color: #9da1a3;
+  background-color: #626262;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes {
@@ -439,7 +445,8 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
-  width: 900px;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: .3em;
   box-shadow: 0 3px 8px #0000003d;
 }
@@ -491,6 +498,22 @@ body {
   padding-top: 120px;
   padding-bottom: 30px;
   font-size: 30px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1260px) {
+  .main-pagina-inicio__section-dinamica-juego {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-pagina-inicio__section-dinamica-juego {
+    flex-direction: column;
+  }
+
+  .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
+    width: 500px;
+  }
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
