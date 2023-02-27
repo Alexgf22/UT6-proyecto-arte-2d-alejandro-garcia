@@ -270,6 +270,7 @@ body {
   border-radius: .5em;
   margin: 55px auto 0;
   display: block;
+  position: relative;
   top: 0;
   left: 0;
   box-shadow: 0 5px 15px #00000059;
