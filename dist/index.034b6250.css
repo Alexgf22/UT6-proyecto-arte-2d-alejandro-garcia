@@ -504,13 +504,47 @@ body {
 }
 
 @media screen and (min-width: 980px) and (max-width: 1260px) {
-  .main-pagina-inicio__section-dinamica-juego {
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego {
     flex-direction: column;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon {
+    width: 100%;
+    margin-top: -160px;
+    margin-right: 270px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__h2 {
+    width: 500px;
+    height: 73px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
+    width: 500px;
   }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1045px) {
-  .main-pagina-inicio__section-dinamica-juego, .main-pagina-inicio__section-audios {
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego {
+    flex-direction: column;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon {
+    width: 100%;
+    margin-top: -160px;
+    margin-right: 270px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__h2 {
+    width: 500px;
+    height: 73px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
+    width: 500px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-audios {
     flex-direction: column;
   }
 }
@@ -521,6 +555,21 @@ body {
   }
 
   .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
+    width: 500px;
+  }
+
+  .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon {
+    width: 100%;
+    margin-top: -160px;
+    margin-right: 270px;
+  }
+
+  .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__h2 {
+    width: 500px;
+    height: 73px;
+  }
+
+  .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
     width: 500px;
   }
 
@@ -582,6 +631,21 @@ body {
 
   .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
     max-width: 400px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon {
+    width: 100%;
+    margin-top: -160px;
+    margin-right: 180px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__h2 {
+    width: 400px;
+    height: 73px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
+    width: 400px;
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-audios {

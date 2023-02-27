@@ -5,8 +5,6 @@
     // Vídeo de la misma temática
     .main-pagina-inicio__section-video {
         padding-bottom: 60px;
-        //position: relative;
-        //z-index: 0;
         //padding-bottom: 56.25%; /* 16/9 ratio */
 
         .section-video__video-principal {
@@ -351,11 +349,37 @@
 // Primer punto de ruptura
 @media screen and (min-width: 980px) and (max-width: 1260px) {
 
-    
+    .main-pagina-inicio {
 
-    .main-pagina-inicio__section-dinamica-juego {
-        flex-direction: column;
+        // Dinámica juego
+        .main-pagina-inicio__section-dinamica-juego {
+            flex-direction: column;
+
+            // Acordeón
+            .section-dinamica-juego__contenedor-acordeon{
+                margin-top: -160px;
+                width: 100%;
+                //display: block;
+                //margin: 0 auto;
+                margin-right: 270px;
+
+                .contenedor-acordeon__bloque {
+
+                    .bloque__h2 {
+                        width: 500px;
+                        height: 73px;
+                    }
+
+                    .bloque__contenido {
+                        width: 500px;
+                    }
+                }
+
+            }
+
+        }
     }
+
     
 
 
@@ -367,14 +391,43 @@
 // Segundo punto de ruptura
 @media screen and (min-width: 980px) and (max-width: 1045px) {
 
-    // Dinámica juego
-    .main-pagina-inicio__section-dinamica-juego {
-        flex-direction: column;
-    }
+    .main-pagina-inicio {
 
-    // Audios
-    .main-pagina-inicio__section-audios { 
-        flex-direction: column;
+        // Dinámica juego
+        .main-pagina-inicio__section-dinamica-juego {
+            flex-direction: column;
+
+           // Acordeón
+           .section-dinamica-juego__contenedor-acordeon{
+                margin-top: -160px;
+                width: 100%;
+                //display: block;
+                //margin: 0 auto;
+                margin-right: 270px;
+
+                .contenedor-acordeon__bloque {
+
+                    .bloque__h2 {
+                        width: 500px;
+                        height: 73px;
+                    }
+
+                    .bloque__contenido {
+                        width: 500px;
+                    }
+                }
+
+            }
+
+
+        }
+
+
+        // Audios
+        .main-pagina-inicio__section-audios { 
+            flex-direction: column;
+        }
+
     }
 
 
@@ -397,6 +450,30 @@
             }
 
         }
+
+
+        // Acordeón
+        .section-dinamica-juego__contenedor-acordeon{
+            margin-top: -160px;
+            width: 100%;
+            //display: block;
+            //margin: 0 auto;
+            margin-right: 270px;
+
+            .contenedor-acordeon__bloque {
+
+                .bloque__h2 {
+                    width: 500px;
+                    height: 73px;
+                }
+
+                .bloque__contenido {
+                    width: 500px;
+                }
+            }
+
+        }
+
     }
 
 
@@ -491,6 +568,30 @@
                     max-width: 400px;
                 }
             }
+
+
+            // Acordeón
+           .section-dinamica-juego__contenedor-acordeon{
+                margin-top: -160px;
+                width: 100%;
+                //display: block;
+                //margin: 0 auto;
+                margin-right: 180px;
+
+                .contenedor-acordeon__bloque {
+
+                    .bloque__h2 {
+                        width: 400px;
+                        height: 73px;
+                    }
+
+                    .bloque__contenido {
+                        width: 400px;
+                    }
+                }
+
+            }
+
 
         }
 
