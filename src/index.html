@@ -134,7 +134,11 @@
             <!-- Contenedor escenario con personaje -->
             <div class="section-dinamica-juego__contenedor-escenario-personaje">
                 <h2 class="contenedor-escenario-personaje__titulo">Dinámica Energy Bots</h2>
-                <img class="contenedor-escenario-personaje__escenario" src="assets/img/escenario-personaje-dinamica-juego.png"   />
+                <picture>
+                    <source media="(max-width: 919px)" srcset="assets/img/escenario-personaje-dinamica-recorte-juego.png">
+                    <source media="(min-width: 920px)" srcset="assets/img/escenario-personaje-dinamica-juego.png">
+                    <img class="contenedor-escenario-personaje__escenario" src="assets/img/escenario-personaje-dinamica-juego.png" alt="Personaje recogiendo rayos del cielo">
+                </picture>
 
             </div>
 
