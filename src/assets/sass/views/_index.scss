@@ -73,12 +73,15 @@
                 @include neo( 1 , 1em , .5em );
                 list-style-type: none;
                 cursor: pointer;
+
             }
-  
-            .activo {
+
+            .puntos__punto.activo {
                 background-color: rgb(98, 98, 98);
   
             }
+  
+            
         }
   
     }
@@ -414,60 +417,88 @@
 // Cuarto punto de ruptura
 @media screen and (max-width: 680px) {
 
-
+    .main-pagina-inicio {
+        // Escenarios
+        .main-pagina-inicio__carrusel-escenarios {
+            .carrusel-escenarios__puntos {
+                .puntos__punto {
+                    width:  1.3em;
+                    height: 1.3em;
+                }
+            }
+        }
     
-    // Personajes
-    .main-pagina-inicio__section-personajes {
-        // Primer personaje
-        .section-personajes__contenedor-personaje-robot { 
+
+        // Personajes
+        .main-pagina-inicio__section-personajes {
+            // Primer personaje
+            .section-personajes__contenedor-personaje-robot { 
+                flex-direction: column;
+
+                .contenedor-personaje-robot__info {
+                    margin-right: 130px;
+                    width: 60%;
+                    text-align: center;
+
+                    .info__parrafo-robot {
+                        text-align: justify;
+                    }
+                }
+            }
+
+            // Segundo personaje
+            .section-personajes__contenedor-personaje-mascota {
+                flex-direction: column;
+
+                .contenedor-personaje-mascota__info {
+                    padding-left: 0;
+
+                    .info__parrafo-mascota {
+                        text-align: justify;
+                    }
+                }
+            }
+
+            // Tercer personaje
+            .section-personajes__contenedor-boss-final{
+                flex-direction: column;
+
+                .contenedor-boss-final__info {
+                    padding-bottom: 30px;
+                    margin-right: 110px;
+                    width: 70%;
+                    text-align: center;
+
+                    .info__parrafo-boss {
+                        text-align: justify;
+                    }
+                }
+            }
+
+
+        }
+
+
+
+
+        // Dinámica juego
+        .main-pagina-inicio__section-dinamica-juego {
             flex-direction: column;
 
-            .contenedor-personaje-robot__info {
-                margin-right: 130px;
+            .section-dinamica-juego__contenedor-escenario-personaje {
+                .contenedor-escenario-personaje__escenario {
+                    max-width: 400px;
+                }
             }
+
         }
 
-        // Segundo personaje
-        .section-personajes__contenedor-personaje-mascota {
+
+        // Audios
+        .main-pagina-inicio__section-audios { 
             flex-direction: column;
-
-            .contenedor-personaje-mascota__info {
-                padding-left: 0;
-            }
         }
 
-        // Tercer personaje
-        .section-personajes__contenedor-boss-final{
-            flex-direction: column;
-
-            .contenedor-boss-final__info {
-                padding-bottom: 30px;
-                margin-right: 110px;
-            }
-        }
-
-
-    }
-
-
-
-
-    // Dinámica juego
-    .main-pagina-inicio__section-dinamica-juego {
-        flex-direction: column;
-
-        .section-dinamica-juego__contenedor-escenario-personaje {
-            .contenedor-escenario-personaje__escenario {
-                max-width: 400px;
-            }
-        }
-
-    }
-
-
-    // Audios
-    .main-pagina-inicio__section-audios { 
-        flex-direction: column;
     }
 
 

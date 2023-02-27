@@ -333,7 +333,7 @@ body {
   transition: all .4s;
 }
 
-.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .activo {
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto.activo {
   background-color: #626262;
 }
 
@@ -529,40 +529,61 @@ body {
 }
 
 @media screen and (max-width: 680px) {
-  .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot {
+  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot {
     flex-direction: column;
   }
 
-  .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info {
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info {
+    width: 60%;
+    text-align: center;
     margin-right: 130px;
   }
 
-  .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota {
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__parrafo-robot {
+    text-align: justify;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota {
     flex-direction: column;
   }
 
-  .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info {
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info {
     padding-left: 0;
   }
 
-  .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final {
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info .info__parrafo-mascota {
+    text-align: justify;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final {
     flex-direction: column;
   }
 
-  .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info {
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info {
+    width: 70%;
+    text-align: center;
     margin-right: 110px;
     padding-bottom: 30px;
   }
 
-  .main-pagina-inicio__section-dinamica-juego {
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info .info__parrafo-boss {
+    text-align: justify;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego {
     flex-direction: column;
   }
 
-  .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
     max-width: 400px;
   }
 
-  .main-pagina-inicio__section-audios {
+  .main-pagina-inicio .main-pagina-inicio__section-audios {
     flex-direction: column;
   }
 }
