@@ -559,8 +559,7 @@ body {
   }
 
   .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
-    margin-left: 90px;
-    margin-right: 90px;
+    max-width: 400px;
   }
 
   .main-pagina-inicio__section-audios {
