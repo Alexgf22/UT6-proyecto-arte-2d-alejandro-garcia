@@ -563,9 +563,10 @@
         .main-pagina-inicio__section-dinamica-juego {
             flex-direction: column;
 
+            // Escenario personaje
             .section-dinamica-juego__contenedor-escenario-personaje {
                 .contenedor-escenario-personaje__escenario {
-                    max-width: 400px;
+                    width: 50%;
                 }
             }
 
