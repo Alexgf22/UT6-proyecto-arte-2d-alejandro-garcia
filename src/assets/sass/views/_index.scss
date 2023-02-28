@@ -375,6 +375,15 @@
             }
 
         }
+
+
+        // Escenarios
+        .main-pagina-inicio__carrusel-escenarios {
+            width: 92%;
+        }
+
+
+        
     }
 
     
@@ -415,6 +424,11 @@
             }
 
 
+        }
+
+        // Escenarios
+        .main-pagina-inicio__carrusel-escenarios {
+            width: 91%;
         }
 
 
@@ -476,6 +490,12 @@
         }
 
 
+        // Escenarios
+        .main-pagina-inicio__carrusel-escenarios {
+            width: 90%;
+        }
+
+
         // Audios
         .main-pagina-inicio__section-audios { 
             flex-direction: column;
@@ -495,6 +515,7 @@
     .main-pagina-inicio {
         // Escenarios
         .main-pagina-inicio__carrusel-escenarios {
+            width: 92%;
             .carrusel-escenarios__puntos {
                 .puntos__punto {
                     width:  1.3em;

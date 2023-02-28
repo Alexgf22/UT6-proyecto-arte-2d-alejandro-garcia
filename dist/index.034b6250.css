@@ -522,6 +522,10 @@ body {
   .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
     width: 500px;
   }
+
+  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
+    width: 92%;
+  }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1045px) {
@@ -542,6 +546,10 @@ body {
 
   .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
     width: 500px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
+    width: 91%;
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-audios {
@@ -575,12 +583,20 @@ body {
     width: 500px;
   }
 
+  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
+    width: 90%;
+  }
+
   .main-pagina-inicio .main-pagina-inicio__section-audios {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 680px) {
+  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
+    width: 92%;
+  }
+
   .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto {
     width: 1.3em;
     height: 1.3em;
