@@ -2,10 +2,19 @@
 
     height: 1400px;
 
+    .main-pagina-inicio__linea-superior-video{
+        border: 2px solid black;
+    }
+
     // Vídeo de la misma temática
     .main-pagina-inicio__section-video {
-        padding-bottom: 60px;
+        padding-bottom: 110px;
         //padding-bottom: 56.25%; /* 16/9 ratio */
+
+        .section-video__h1 {
+            @include estiloH1;
+            padding-top: 90px;
+        }
 
         .section-video__video-principal {
             width:90%;
@@ -23,17 +32,28 @@
 
     }
 
+    .main-pagina-inicio__linea-inferior-video {
+        border: 2px solid black;
+    }
+
+
+
 
     // Escenarios
     .main-pagina-inicio__carrusel-escenarios {
         width:90%;
         max-width: 120em;
         padding:2em;
-        padding-top: 20px;
+        padding-top: 60px;
         margin-top: 90px;
         display: block;
         margin:0 auto;
         overflow: hidden;
+        padding-bottom: 80px;
+
+        .carrusel-escenarios__h1 {
+            @include estiloH1;
+        }
 
         .carrusel-escenarios__contenedor {
             width: 400%;
@@ -85,6 +105,10 @@
   
     }
 
+    .main-pagina-inicio__linea-carrusel {
+        border: 2px solid black;
+    }
+
 
   
 
@@ -92,9 +116,14 @@
 
     // Personajes
     .main-pagina-inicio__section-personajes {
-        margin-top:200px;
+        padding-top: 140px;
         max-width: 980px;
         margin: 0 auto;
+        padding-bottom: 100px;
+
+        .section-personajes__h1 {
+            @include estiloH1;
+        }
 
         // Primer personaje
         .section-personajes__contenedor-personaje-robot {
@@ -113,10 +142,12 @@
                     font-size: 32px;
                     padding-bottom: 5px;
                     text-align: center;
+                    font-family: $fuente-titulos;
                 }
 
                 .info__parrafo-robot {
                     font-size: 16px;
+                    font-family: $fuente-parrafos;
                 }
 
             }
@@ -154,10 +185,12 @@
                     font-size: 32px;
                     padding-bottom: 5px;
                     text-align: center;
+                    font-family: $fuente-titulos;
                 }
 
                 .info__parrafo-mascota {
                     font-size: 16px;
+                    font-family: $fuente-parrafos;
                 }
 
             }
@@ -190,10 +223,12 @@
                     font-size: 32px;
                     padding-bottom: 5px;
                     text-align: center;
+                    font-family: $fuente-titulos;
                 }
 
                 .info__parrafo-boss {
                     font-size: 16px;
+                    font-family: $fuente-parrafos;
 
                 }
 
@@ -201,6 +236,11 @@
 
         }
 
+    }
+
+
+    .main-pagina-inicio__linea-personajes {
+        border: 2px solid black;
     }
 
 
@@ -213,15 +253,18 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        padding-bottom: 50px;
+
 
         // Escenario con personaje
         .section-dinamica-juego__contenedor-escenario-personaje {
-            padding-top: 190px;
+            padding-top: 60px;
 
             .contenedor-escenario-personaje__titulo {
-                font-size: 30px;
+                font-size: 32px;
                 padding-bottom: 20px;
                 text-align: center;
+                font-family: $fuente-titulos;
             }
 
             .contenedor-escenario-personaje__escenario {
@@ -239,7 +282,7 @@
             width:90%;
             max-width: 20rem;
             padding:2rem;
-            padding-top: 260px;
+            padding-top: 220px;
         
             .contenedor-acordeon__bloque{
                 margin: 0 0 1rem;
@@ -255,6 +298,7 @@
                     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
                     color: white;
                     cursor: pointer;
+                    font-family: $fuente-titulos;
                 }
 
                 .bloque__contenido{
@@ -264,6 +308,7 @@
                     text-align: center;
                     overflow: hidden;
                     transition: all .5s ease;
+                    font-family: $fuente-parrafos;
                 }
 
             }
@@ -276,10 +321,11 @@
             }
 
         }
+    }
 
 
-
-
+    .main-pagina-inicio__linea-dinamica {
+        border: 2px solid black;
     }
 
 
@@ -290,7 +336,9 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 110px;
+        padding-top: 70px;
+        padding-bottom: 120px;
+        //padding-right: 70px;
 
         // Música de fondo del videojuego 
         .section-audios__musica-juego {
@@ -300,6 +348,7 @@
                 text-align: center;
                 padding-top: 120px;
                 padding-bottom: 40px;
+                font-family: $fuente-titulos;
             }
 
 
@@ -314,6 +363,7 @@
                 text-align: center;
                 padding-top: 120px;
                 padding-bottom: 40px;
+                font-family: $fuente-titulos;
             }
 
         }
@@ -327,13 +377,15 @@
                 text-align: center;
                 padding-top: 120px;
                 padding-bottom: 40px;
+                font-family: $fuente-titulos;
             }
-
 
         }
 
+    }
 
-
+    .main-pagina-inicio__linea-audios {
+        border: 2px solid black;
     }
 
 }

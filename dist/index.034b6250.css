@@ -8,7 +8,6 @@
 
 * {
   box-sizing: border-box;
-  vertical-align: baseline;
   border: 0;
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@
 
 body {
   width: 100%;
-  height: 5500px;
+  height: 5650px;
   background-color: #c9c2c2;
   margin: 0;
 }
@@ -259,8 +258,19 @@ body {
   height: 1400px;
 }
 
+.main-pagina-inicio .main-pagina-inicio__linea-superior-video {
+  border: 2px solid #000;
+}
+
 .main-pagina-inicio .main-pagina-inicio__section-video {
-  padding-bottom: 60px;
+  padding-bottom: 110px;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-video .section-video__h1 {
+  text-align: center;
+  padding-top: 90px;
+  font-family: Staatliches;
+  font-size: 42px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
@@ -276,13 +286,23 @@ body {
   box-shadow: 0 5px 15px #00000059;
 }
 
+.main-pagina-inicio .main-pagina-inicio__linea-inferior-video {
+  border: 2px solid #000;
+}
+
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
   width: 90%;
   max-width: 120em;
   margin: 0 auto;
-  padding: 20px 2em 2em;
+  padding: 60px 2em 80px;
   display: block;
   overflow: hidden;
+}
+
+.main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__h1 {
+  text-align: center;
+  font-family: Staatliches;
+  font-size: 42px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__contenedor {
@@ -338,9 +358,21 @@ body {
   background-color: #626262;
 }
 
+.main-pagina-inicio .main-pagina-inicio__linea-carrusel {
+  border: 2px solid #000;
+}
+
 .main-pagina-inicio .main-pagina-inicio__section-personajes {
   max-width: 980px;
   margin: 0 auto;
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+
+.main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__h1 {
+  text-align: center;
+  font-family: Staatliches;
+  font-size: 42px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot {
@@ -359,10 +391,12 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__titulo-robot {
   text-align: center;
   padding-bottom: 5px;
+  font-family: Staatliches;
   font-size: 32px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__parrafo-robot {
+  font-family: Inter, sans-serif;
   font-size: 16px;
 }
 
@@ -394,10 +428,12 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info .info__titulo-mascota {
   text-align: center;
   padding-bottom: 5px;
+  font-family: Staatliches;
   font-size: 32px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info .info__parrafo-mascota {
+  font-family: Inter, sans-serif;
   font-size: 16px;
 }
 
@@ -424,27 +460,35 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info .info__titulo-boss {
   text-align: center;
   padding-bottom: 5px;
+  font-family: Staatliches;
   font-size: 32px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info .info__parrafo-boss {
+  font-family: Inter, sans-serif;
   font-size: 16px;
+}
+
+.main-pagina-inicio .main-pagina-inicio__linea-personajes {
+  border: 2px solid #000;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego {
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 50px;
   display: flex;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje {
-  padding-top: 190px;
+  padding-top: 60px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__titulo {
   text-align: center;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-family: Staatliches;
+  font-size: 32px;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
@@ -456,7 +500,7 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon {
   width: 90%;
   max-width: 20rem;
-  padding: 260px 2rem 2rem;
+  padding: 220px 2rem 2rem;
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque {
@@ -472,6 +516,7 @@ body {
   border-radius: .3em;
   margin: 0 0 1rem;
   padding: 1rem;
+  font-family: Staatliches;
   font-size: 30px;
   box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d;
 }
@@ -480,6 +525,7 @@ body {
   height: 0;
   text-align: center;
   padding: 0;
+  font-family: Inter, sans-serif;
   font-size: 18px;
   transition: all .5s;
   overflow: hidden;
@@ -489,10 +535,15 @@ body {
   height: 4rem;
 }
 
+.main-pagina-inicio .main-pagina-inicio__linea-dinamica {
+  border: 2px solid #000;
+}
+
 .main-pagina-inicio .main-pagina-inicio__section-audios {
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 110px;
+  padding-top: 70px;
+  padding-bottom: 120px;
   display: flex;
 }
 
@@ -500,7 +551,12 @@ body {
   text-align: center;
   padding-top: 120px;
   padding-bottom: 40px;
+  font-family: Staatliches;
   font-size: 30px;
+}
+
+.main-pagina-inicio .main-pagina-inicio__linea-audios {
+  border: 2px solid #000;
 }
 
 @media screen and (min-width: 980px) and (max-width: 1260px) {
