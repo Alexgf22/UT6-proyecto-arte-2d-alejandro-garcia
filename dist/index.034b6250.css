@@ -15,7 +15,7 @@
 
 body {
   width: 100%;
-  height: 5650px;
+  height: 5790px;
   background-color: #c9c2c2;
   margin: 0;
 }
@@ -130,7 +130,7 @@ body {
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .nav-label__icono-hamburguesa {
     cursor: pointer;
     z-index: 3;
-    background-color: #fff;
+    background-image: linear-gradient(to top, #efefef, #f3f3f3, #f7f7f7, #fbfbfb, #fff);
     justify-content: center;
     align-items: center;
     margin-top: 16px;
@@ -187,7 +187,7 @@ body {
   .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera .nav-label__icono-hamburguesa {
     cursor: pointer;
     z-index: 3;
-    background-color: #fff;
+    background-image: linear-gradient(to top, #efefef, #f3f3f3, #f7f7f7, #fbfbfb, #fff);
     padding: 5px;
     display: flex;
     position: absolute;
@@ -540,8 +540,9 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__section-audios {
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
   padding-top: 70px;
   padding-bottom: 120px;
   display: flex;
@@ -665,7 +666,7 @@ body {
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info {
     width: 60%;
     text-align: center;
-    margin-right: 130px;
+    margin-right: 90px;
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__parrafo-robot {
@@ -682,6 +683,7 @@ body {
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info {
     margin-top: -50px;
+    margin-left: 40px;
     padding-left: 0;
   }
 
@@ -695,13 +697,14 @@ body {
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__imagen {
     width: 68%;
+    margin-left: 50px;
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info {
-    width: 70%;
+    width: 67%;
     text-align: center;
     margin-top: 60px;
-    margin-right: 110px;
+    margin-right: 40px;
     padding-bottom: 30px;
   }
 

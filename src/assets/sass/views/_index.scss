@@ -334,11 +334,11 @@
 
     .main-pagina-inicio__section-audios {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 30px;
         align-items: center;
         padding-top: 70px;
         padding-bottom: 120px;
-        //padding-right: 70px;
 
         // Música de fondo del videojuego 
         .section-audios__musica-juego {
@@ -383,6 +383,80 @@
         }
 
     }
+
+
+
+    // Intento tabs
+
+    /*.main-pagina-inicio__section-audios{
+        width: 90%;
+        max-width: 120em;
+        display: block;
+        margin: 0 auto;
+        // background-color: lightgray;
+        padding:1em;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include neo( 1 , .5em , .3em);
+    
+        .section-audios__ul-botones{
+            width:100%;
+            // background-color: lightblue;
+        
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+
+            .ul-botones__li{
+                // background-color: lightgreen;
+                padding: 1em;
+                margin:0 2em 0 0;
+                @include neo( 1 , 1em , 1em);
+                transition: all .5s ease;
+                cursor: pointer;
+            }
+
+            .ul-botones__li.activado{
+                background-color: rgb(84, 84, 84);
+                color:white;
+            }
+        }
+        
+        
+        .section-audios__subcontenedor{
+            min-height: 10vh;
+            // background-color: lightsalmon;
+            position: relative;
+            display: block;
+            margin-right: 30%;
+            margin-left: 40%;
+
+            .subcontenedor__bloque{
+                // background-color: lightseagreen;
+                margin:1em;
+                padding: 1em;
+                position: absolute;
+                top:2em;
+                @include neo( 1 , 1em , 1em);
+                opacity: 0;
+                transform: translateY(50%);
+                transition: all .5s ease;
+            }
+            .subcontenedor__bloque.activado{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+        
+    }*/
+    
+
+
+
 
     .main-pagina-inicio__linea-audios {
         border: 2px solid black;
@@ -584,7 +658,7 @@
                 flex-direction: column;
 
                 .contenedor-personaje-robot__info {
-                    margin-right: 130px;
+                    margin-right: 90px;
                     width: 60%;
                     text-align: center;
 
@@ -605,6 +679,7 @@
                 .contenedor-personaje-mascota__info {
                     padding-left: 0;
                     margin-top: -50px;
+                    margin-left: 40px;
 
                     .info__parrafo-mascota {
                         text-align: justify;
@@ -618,13 +693,14 @@
 
                 .contenedor-boss-final__imagen {
                     width: 68%;
+                    margin-left: 50px
                 }
 
                 .contenedor-boss-final__info {
                     padding-bottom: 30px;
-                    margin-right: 110px;
+                    margin-right: 40px;
                     margin-top: 60px;
-                    width: 70%;
+                    width: 67%;
                     text-align: center;
 
                     .info__parrafo-boss {
