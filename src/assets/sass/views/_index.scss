@@ -50,6 +50,8 @@
         margin:0 auto;
         overflow: hidden;
         padding-bottom: 80px;
+        position: relative;
+        z-index: 0;
 
         .carrusel-escenarios__h1 {
             @include estiloH1;
@@ -63,7 +65,7 @@
             justify-content: space-between;
             align-items: center;
             padding:2em;
-
+            
 
             transition: all .5s ease;
             transform: translateX(0%);
@@ -502,7 +504,7 @@
 
 
 // Tercer punto de ruptura
-@media screen and (min-width: 680px) and (max-width: 980px) {
+@media screen and (min-width: 680px) and (max-width: 979px) {
 
     .main-pagina-inicio {
 
@@ -561,11 +563,12 @@
 
                     .info__titulo-robot {
                         margin-left: 30px;
+                        width: 140%;
                     }
 
                     .info__parrafo-robot {
-                        width: 180%;
-                        margin-left: -35px;
+                        width: 165%;
+                        margin-left: -20px;
                         padding-left: 16px;
                     }
                 }
@@ -587,7 +590,7 @@
 
 
 // Cuarto punto de ruptura
-@media screen and (max-width: 680px) {
+@media screen and (min-width: 425px) and (max-width: 679px) {
 
     .main-pagina-inicio {
         // Escenarios
@@ -610,7 +613,7 @@
 
                 .contenedor-personaje-robot__info {
                     margin-right: 90px;
-                    width: 60%;
+                    width: 70%;
                     text-align: center;
 
                     .info__parrafo-robot {
@@ -631,6 +634,7 @@
                     padding-left: 0;
                     margin-top: -50px;
                     margin-left: 40px;
+                    width: 58%;
 
                     .info__parrafo-mascota {
                         text-align: justify;
@@ -649,9 +653,9 @@
 
                 .contenedor-boss-final__info {
                     padding-bottom: 30px;
-                    margin-right: 40px;
+                    margin-right: 50px;
                     margin-top: 60px;
-                    width: 67%;
+                    width: 77%;
                     text-align: center;
 
                     .info__parrafo-boss {
@@ -719,6 +723,148 @@
 
 
 
+
+// Quinto punto de ruptura
+@media screen and (min-width: 330px) and (max-width: 424px) {
+
+
+    .main-pagina-inicio {
+        // Escenarios
+        .main-pagina-inicio__carrusel-escenarios {
+            width: 92%;
+            .carrusel-escenarios__puntos {
+                .puntos__punto {
+                    width:  1.3em;
+                    height: 1.3em;
+                }
+            }
+        }
+    
+
+        // Personajes
+        .main-pagina-inicio__section-personajes {
+            // Primer personaje
+            .section-personajes__contenedor-personaje-robot { 
+                flex-direction: column;
+
+                .contenedor-personaje-robot__info {
+                    margin-right: 90px;
+                    width: 92%;
+                    text-align: center;
+
+                    .info__parrafo-robot {
+                        text-align: justify;
+                    }
+                }
+
+                .contenedor-personaje-robot__imagen {
+                    width: 160%;
+                }
+            }
+
+            // Segundo personaje
+            .section-personajes__contenedor-personaje-mascota {
+                flex-direction: column;
+
+                .contenedor-personaje-mascota__imagen {
+                    margin-top: -90px;
+                    width: 70%;
+                    margin-left: 40px;
+                }
+
+                .contenedor-personaje-mascota__info {
+                    padding-left: 0;
+                    margin-top: -50px;
+                    margin-left: 40px;
+                    width: 80%;
+
+                    .info__parrafo-mascota {
+                        text-align: justify;
+                    }
+                }
+            }
+
+            // Tercer personaje
+            .section-personajes__contenedor-boss-final{
+                flex-direction: column;
+
+                .contenedor-boss-final__imagen {
+                    width: 100%;
+                    margin-left: 50px;
+                    margin-right: 40px;
+                }
+
+                .contenedor-boss-final__info {
+                    padding-bottom: 30px;
+                    margin-right: 50px;
+                    margin-top: 60px;
+                    width: 100%;
+                    text-align: center;
+
+                    .info__parrafo-boss {
+                        text-align: justify;
+                    }
+                }
+            }
+
+
+        }
+
+
+
+
+        // Dinámica juego
+        .main-pagina-inicio__section-dinamica-juego {
+            flex-direction: column;
+
+            // Escenario personaje
+            .section-dinamica-juego__contenedor-escenario-personaje {
+                .contenedor-escenario-personaje__escenario {
+                    width: 88%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+
+            // Acordeón
+           .section-dinamica-juego__contenedor-acordeon{
+                margin-top: -160px;
+                width: 100%;
+                //display: block;
+                //margin: 0 auto;
+                margin-right: 35px;
+
+                .contenedor-acordeon__bloque {
+
+                    .bloque__h2 {
+                        width: 270px;
+                        height: 78px;
+                        padding-top: 18px;
+                        vertical-align: middle;
+                    }
+
+                    .bloque__contenido {
+                        width: 270px;
+                    }
+                }
+
+            }
+
+
+        }
+
+
+        // Audios
+        .main-pagina-inicio__section-audios { 
+            flex-direction: column;
+        }
+
+    }
+
+
+
+}
 
 
 

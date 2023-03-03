@@ -23,6 +23,7 @@ body {
 .cabecera {
   width: 100%;
   height: 100px;
+  z-index: 2;
   background-color: #485660;
   padding: 20px;
   position: sticky;
@@ -294,9 +295,11 @@ body {
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
   width: 90%;
   max-width: 120em;
+  z-index: 0;
   margin: 0 auto;
   padding: 60px 2em 80px;
   display: block;
+  position: relative;
   overflow: hidden;
 }
 
@@ -615,7 +618,7 @@ body {
   }
 }
 
-@media screen and (min-width: 680px) and (max-width: 980px) {
+@media screen and (min-width: 680px) and (max-width: 979px) {
   .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego {
     flex-direction: column;
   }
@@ -650,12 +653,13 @@ body {
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__titulo-robot {
+    width: 140%;
     margin-left: 30px;
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__parrafo-robot {
-    width: 180%;
-    margin-left: -35px;
+    width: 165%;
+    margin-left: -20px;
     padding-left: 16px;
   }
 
@@ -664,7 +668,7 @@ body {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width: 425px) and (max-width: 679px) {
   .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
     width: 92%;
   }
@@ -679,7 +683,7 @@ body {
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info {
-    width: 60%;
+    width: 70%;
     text-align: center;
     margin-right: 90px;
   }
@@ -697,6 +701,7 @@ body {
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info {
+    width: 58%;
     margin-top: -50px;
     margin-left: 40px;
     padding-left: 0;
@@ -716,10 +721,10 @@ body {
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info {
-    width: 67%;
+    width: 77%;
     text-align: center;
     margin-top: 60px;
-    margin-right: 40px;
+    margin-right: 50px;
     padding-bottom: 30px;
   }
 
@@ -750,6 +755,109 @@ body {
 
   .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
     width: 400px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-audios {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 424px) {
+  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
+    width: 92%;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot {
+    flex-direction: column;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info {
+    width: 92%;
+    text-align: center;
+    margin-right: 90px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__parrafo-robot {
+    text-align: justify;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__imagen {
+    width: 160%;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota {
+    flex-direction: column;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__imagen {
+    width: 70%;
+    margin-top: -90px;
+    margin-left: 40px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info {
+    width: 80%;
+    margin-top: -50px;
+    margin-left: 40px;
+    padding-left: 0;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-mascota .contenedor-personaje-mascota__info .info__parrafo-mascota {
+    text-align: justify;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final {
+    flex-direction: column;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__imagen {
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 40px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    margin-right: 50px;
+    padding-bottom: 30px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-boss-final .contenedor-boss-final__info .info__parrafo-boss {
+    text-align: justify;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego {
+    flex-direction: column;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-escenario-personaje .contenedor-escenario-personaje__escenario {
+    width: 88%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon {
+    width: 100%;
+    margin-top: -160px;
+    margin-right: 35px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__h2 {
+    width: 270px;
+    height: 78px;
+    vertical-align: middle;
+    padding-top: 18px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
+    width: 270px;
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-audios {
