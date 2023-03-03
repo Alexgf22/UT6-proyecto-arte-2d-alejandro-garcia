@@ -278,7 +278,7 @@ body {
 .main-pagina-inicio .main-pagina-inicio__section-video .section-video__video-principal {
   width: 90%;
   height: 100%;
-  z-index: -2;
+  z-index: 0;
   border-radius: .5em;
   margin: 55px auto 0;
   display: block;
