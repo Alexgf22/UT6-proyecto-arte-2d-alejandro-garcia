@@ -644,6 +644,20 @@ body {
     width: 90%;
   }
 
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info {
+    margin-left: 40px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__titulo-robot {
+    margin-left: 30px;
+  }
+
+  .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info .info__parrafo-robot {
+    width: 180%;
+    margin-left: -35px;
+    padding-left: 16px;
+  }
+
   .main-pagina-inicio .main-pagina-inicio__section-audios {
     flex-direction: column;
   }
