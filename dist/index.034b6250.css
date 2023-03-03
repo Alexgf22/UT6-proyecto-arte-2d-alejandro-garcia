@@ -26,6 +26,7 @@ body {
   background-color: #485660;
   padding: 20px;
   position: sticky;
+  top: 0;
 }
 
 .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera {
