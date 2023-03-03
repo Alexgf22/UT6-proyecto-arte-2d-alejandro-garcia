@@ -56,7 +56,12 @@
         <section class="main-pagina-inicio__section-video">
             <a name="ancla-video" ></a>
             <h1 class="section-video__h1">Vídeo sobre la temática</h1>
-            <video class="section-video__video-principal" src="assets/video/video-futurista.mp4" controls loop muted></video>
+            <!--<video class="section-video__video-principal" src="assets/video/video-futurista.mp4" controls loop muted></video>-->
+            <!-- Vídeo en diferentes formatos -->
+            <video class="section-video__video-principal" controls loop muted>
+                <source src="assets/video/video-futurista.mp4" type="video/mp4">
+                <source src="assets/video/video-futurista.webm" type="video/webm">
+            </video>
         </section>
 
         <hr class="main-pagina-inicio__linea-inferior-video">
@@ -212,21 +217,36 @@
             <!-- Música de fondo del videojuego -->
             <div class="section-audios__musica-juego">
                 <h2 class="musica-juego__titulo">Música de fondo</h2>
-                <audio class="musica-juego__audio" controls loop src="assets/audio/primer-formato.mp3"></audio>
+                <!--<audio class="musica-juego__audio" controls loop src="assets/audio/primer-formato.mp3"></audio>-->
+                <audio class="musica-juego__audio" controls loop muted>
+                    <source src="assets/audio/primer-formato.mp3" type="audio/mp3">
+                    <source src="assets/audio/musica-juego-formato-2.ogg" type="audio/ogg">
+                    <source src="assets/audio/musica-juego-formato-3.wav" type="audio/wav">
+                </audio>
 
             </div>
 
             <!-- Voz del robot protagonista -->
             <div class="section-audios__voz-robot">
                 <h2 class="voz-robot__titulo">Voz del robot principal</h2>
-                <audio class="voz-robot__audio" controls loop src="assets/audio/quinto-formato.aac"></audio>
+                <!--<audio class="voz-robot__audio" controls loop src="assets/audio/quinto-formato.aac"></audio>-->
+                <audio class="voz-robot__audio" controls loop muted>
+                    <source src="assets/audio/segundo-formato.mp3" type="audio/mp3">
+                    <source src="assets/audio/cuarto-formato.ogg" type="audio/ogg">
+                    <source src="assets/audio/voz-personaje-formato-3.wav" type="audio/wav">
+                </audio>
 
             </div>
 
             <!-- Sonido de movimiento del robot protagonista -->
             <div class="section-audios__sonido-movimiento">
                 <h2 class="sonido-movimiento__titulo">Movimiento del robot</h2>
-                <audio class="sonido-movimiento__audio" controls loop src="assets/audio/segundo-formato.ogg"></audio>
+                <!--<audio class="sonido-movimiento__audio" controls loop src="assets/audio/segundo-formato.ogg"></audio>-->
+                <audio class="sonido-movimiento__audio" controls loop muted>
+                    <source src="assets/audio/cuarto-formato.mp3" type="audio/mp3">
+                    <source src="assets/audio/segundo-formato.ogg" type="audio/ogg">
+                    <source src="assets/audio/primer-formato.wav" type="audio/wav">
+                </audio>
 
             </div>
 
