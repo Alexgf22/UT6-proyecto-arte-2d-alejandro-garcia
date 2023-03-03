@@ -41,8 +41,8 @@
 
     // Escenarios
     .main-pagina-inicio__carrusel-escenarios {
-        width:90%;
-        max-width: 120em;
+        //width:90%;
+        //max-width: 120em;
         padding:2em;
         padding-top: 60px;
         margin-top: 90px;
@@ -52,6 +52,7 @@
         padding-bottom: 80px;
         position: relative;
         z-index: 0;
+        margin-right: 20px;
 
         .carrusel-escenarios__h1 {
             @include estiloH1;
@@ -74,6 +75,7 @@
             .contenedor__escenario {
                 @include estiloEscenario;
                 @include neo( 1 , 1em , 1em );
+                margin: 10px;
             }
         }
   
@@ -436,9 +438,9 @@
 
 
         // Escenarios
-        .main-pagina-inicio__carrusel-escenarios {
+        /*.main-pagina-inicio__carrusel-escenarios {
             width: 92%;
-        }
+        }*/
 
 
         
@@ -485,9 +487,9 @@
         }
 
         // Escenarios
-        .main-pagina-inicio__carrusel-escenarios {
+        /*.main-pagina-inicio__carrusel-escenarios {
             width: 91%;
-        }
+        }*/
 
 
         // Audios
@@ -549,9 +551,9 @@
 
 
         // Escenarios
-        .main-pagina-inicio__carrusel-escenarios {
+        /*.main-pagina-inicio__carrusel-escenarios {
             width: 90%;
-        }
+        }*/
 
 
 
@@ -595,7 +597,7 @@
     .main-pagina-inicio {
         // Escenarios
         .main-pagina-inicio__carrusel-escenarios {
-            width: 92%;
+            //width: 92%;
             .carrusel-escenarios__puntos {
                 .puntos__punto {
                     width:  1.3em;
@@ -731,7 +733,7 @@
     .main-pagina-inicio {
         // Escenarios
         .main-pagina-inicio__carrusel-escenarios {
-            width: 92%;
+            //width: 92%;
             .carrusel-escenarios__puntos {
                 .puntos__punto {
                     width:  1.3em;

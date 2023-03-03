@@ -28,6 +28,8 @@ body {
   padding: 20px;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 .cabecera .cabecera__menu-navegacion-nav .menu-navegacion-nav__lista-cabecera {
@@ -293,10 +295,8 @@ body {
 }
 
 .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
-  width: 90%;
-  max-width: 120em;
   z-index: 0;
-  margin: 0 auto;
+  margin: 0 20px 0 auto;
   padding: 60px 2em 80px;
   display: block;
   position: relative;
@@ -330,7 +330,7 @@ body {
   box-shadow: 0 3px 8px #0000003d;
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   border-radius: 1em;
-  margin: 0 auto 0 20px;
+  margin: 10px;
   transition: all .4s;
   display: block;
 }
@@ -583,10 +583,6 @@ body {
   .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
     width: 500px;
   }
-
-  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
-    width: 92%;
-  }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1045px) {
@@ -607,10 +603,6 @@ body {
 
   .main-pagina-inicio .main-pagina-inicio__section-dinamica-juego .section-dinamica-juego__contenedor-acordeon .contenedor-acordeon__bloque .bloque__contenido {
     width: 500px;
-  }
-
-  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
-    width: 91%;
   }
 
   .main-pagina-inicio .main-pagina-inicio__section-audios {
@@ -644,10 +636,6 @@ body {
     width: 500px;
   }
 
-  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
-    width: 90%;
-  }
-
   .main-pagina-inicio .main-pagina-inicio__section-personajes .section-personajes__contenedor-personaje-robot .contenedor-personaje-robot__info {
     margin-left: 40px;
   }
@@ -669,10 +657,6 @@ body {
 }
 
 @media screen and (min-width: 425px) and (max-width: 679px) {
-  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
-    width: 92%;
-  }
-
   .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto {
     width: 1.3em;
     height: 1.3em;
@@ -763,10 +747,6 @@ body {
 }
 
 @media screen and (min-width: 330px) and (max-width: 424px) {
-  .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios {
-    width: 92%;
-  }
-
   .main-pagina-inicio .main-pagina-inicio__carrusel-escenarios .carrusel-escenarios__puntos .puntos__punto {
     width: 1.3em;
     height: 1.3em;
