@@ -41,9 +41,8 @@
 
     // Escenarios
     .main-pagina-inicio__carrusel-escenarios {
-        //width:90%;
-        //max-width: 120em;
-        padding:2em;
+        width:100%;
+        padding:0.1em;
         padding-top: 60px;
         margin-top: 90px;
         display: block;
@@ -52,7 +51,6 @@
         padding-bottom: 80px;
         position: relative;
         z-index: 0;
-        margin-right: 20px;
 
         .carrusel-escenarios__h1 {
             @include estiloH1;
@@ -437,10 +435,7 @@
         }
 
 
-        // Escenarios
-        /*.main-pagina-inicio__carrusel-escenarios {
-            width: 92%;
-        }*/
+        
 
 
         
@@ -486,11 +481,7 @@
 
         }
 
-        // Escenarios
-        /*.main-pagina-inicio__carrusel-escenarios {
-            width: 91%;
-        }*/
-
+        
 
         // Audios
         .main-pagina-inicio__section-audios { 
@@ -550,12 +541,7 @@
         }
 
 
-        // Escenarios
-        /*.main-pagina-inicio__carrusel-escenarios {
-            width: 90%;
-        }*/
-
-
+        
 
         // Personajes
         .main-pagina-inicio__section-personajes {
@@ -597,7 +583,7 @@
     .main-pagina-inicio {
         // Escenarios
         .main-pagina-inicio__carrusel-escenarios {
-            //width: 92%;
+            padding: 0em;
             .carrusel-escenarios__puntos {
                 .puntos__punto {
                     width:  1.3em;
@@ -733,7 +719,7 @@
     .main-pagina-inicio {
         // Escenarios
         .main-pagina-inicio__carrusel-escenarios {
-            //width: 92%;
+            padding: 0em;
             .carrusel-escenarios__puntos {
                 .puntos__punto {
                     width:  1.3em;
